@@ -1,23 +1,42 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{}
+
+::-webkit-scrollbar{
+    display: none;
+}
 body{
-    background: url(./background\ \(1\).png);
     position: absolute;
     top: 0;
     left: 0;
     margin: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+#header{
+    background: url(./background\ \(1\).png) center fixed no-repeat;
+    height: 100vh;
+
 }
 
 nav{
     display: flex;
-    position: sticky;
-    margin-top: 10px;
+    position: fixed;
+    margin-left: 5%;
+    margin-top: 20px;
     width: 90vw;
     background-color: #8671a9;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     border-radius: 50px;
-    margin-left: 36px;
     border-style: solid;
-    border-color: #55446f;
+    border-color: #5a4972;
+    z-index: 3;
 }
 
 #logo{}
@@ -38,26 +57,177 @@ ul{
     font-size: 1rem;
     padding: 0rem 0.5rem;
     margin-right: 1rem;
+    cursor: pointer;   
+}
+
+.nav-li a{
+   text-decoration: none;
+   color: white;
+   
+}
+
+#hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+#since{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sinceLine{
+    transform: rotate(90deg);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 90px;
+}
+
+path{
+    fill: #4b4758;
+}
+
+#hero_img{
+    padding: 4rem 2.5rem;
     
 }
 
-#hero{}
 
-#title{}
+#card-div{
+    padding: 3.5rem 2.5rem;
+    background-color: #00000014;
+    backdrop-filter: blur(6px);
+    border-radius: 50px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    border-color: #5a4972;
+}
 
-#subtitle{}
+#title{
+    font-family:'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    margin: 0.5rem;
+}
 
-#subtitle2{}
+#subtitle{
+    font-family:'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #4b4758;
+    margin: 0.5rem;
+}
 
-#info{}
+#subtitle2{
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #4b4758;
+    margin: 1rem;
+}
 
-#resume{}
+#divisor{
+    width: 100vw;
+    transition: all 0.4s ease;
+    background: url(./flat-lay-workstation-with-laptop-headphones-min-scaled.png) center fixed no-repeat;
+    
+}
 
-#divisor{}
 
-#title2{}
 
-.services{}
+.divider1{
+    height: 120px;
+
+}
+
+.divider2{
+
+    background: url(./wave1\ \(2\).png) center;
+    height: 450px;
+    position: absolute;
+    top: 493px;
+}
+
+.divider3{
+    
+}
+
+.vector-divider.divider4{
+
+}
+
+.vector-divider.divider5{
+    display: flex;
+}
+
+#divider-img{
+    width: 700px;
+    height: fit-content;
+    margin-top: -50px;
+    border-color: #e463ea;
+    filter: drop-shadow(3px 3px 4px #e463ea);
+}
+
+#div-title2{   
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: static;
+}
+
+#title2{
+    font-family: 'montserrat';
+    font-weight: 700;
+    font-size: 6rem;
+    color: #ffffff;
+    margin: 0;
+    background: #292929;
+    border-radius: 10rem;
+    padding: 1rem 6rem;
+    border-style: solid;
+    border-color: #00000078;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+#servicios-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.services{
+    padding: 10rem;
+    margin: 3rem;
+    width: 200px;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #5a4972;
+    text-align: center;
+    background-color: #00000017;
+    backdrop-filter: blur(12px);
+}
 
 #section2{}
 
