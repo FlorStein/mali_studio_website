@@ -1,0 +1,43 @@
+#cursor{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #292929;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: difference;
+ 
+}
+
+#cursor.mini{
+    transform: scale(1.4);
+    border-style:solid;
+    background-color: #ffffff30;
+    border-color: #000000;
+    border-width: 0.01px;
+    mix-blend-mode:hard-light;
+
+
+}
+
+
+#cursor.maxi{
+    transform: scale(2.5);
+    border-style: solid;
+    border-color: #000000;
+    mix-blend-mode:difference;
+    transition: .2s linear;
+  
+}
+
+#cursor.eye{
+    background: url(./eye.svg) center no-repeat;
+    width: 250px;
+    height: 250px;
+    z-index: 30;
+    mix-blend-mode:unset;
+
+}
