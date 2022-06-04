@@ -1,10 +1,25 @@
 html{
     scroll-behavior: smooth;
+    cursor: none;
 }
 :root{}
 
 ::-webkit-scrollbar{
     display: none;
+}
+
+#cursor{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #292929;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+    pointer-events: painted;
+    mix-blend-mode: difference;  
 }
 body{
     position: absolute;
