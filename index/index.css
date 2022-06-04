@@ -4,6 +4,14 @@ html{
 }
 :root{}
 
+@font-face {
+    font-family: 'soviet_programbold';
+    src: url(./sovietprogram-bold-webfont.woff2) format('woff2'),
+         url(./sovietprogram-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 ::-webkit-scrollbar{
     display: none;
 }
@@ -76,8 +84,7 @@ ul{
 .nav-li a{
    text-decoration: none;
    color: white;
-   padding: 1.1rem 0.5rem;
-   
+   padding: 1.1rem 0.5rem;   
 }
 
 #hero{
@@ -93,7 +100,7 @@ ul{
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-size: 1.5rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Courier New', Courier, monospace;
     color: #1a1a1a;
     display: flex;
     flex-direction: row;
@@ -113,8 +120,7 @@ path{
 }
 
 #hero_img{
-    padding: 4rem 2.5rem;
-    
+    padding: 4rem 2.5rem;    
 }
 
 
@@ -156,35 +162,29 @@ path{
 #divisor{
     width: 100vw;
     transition: all 0.4s ease;
-    background: url(./flat-lay-workstation-with-laptop-headphones-min-scaled.png) center fixed no-repeat;
-    
+    background:#927AB8;   
 }
-
-
 
 .divider1{
-    height: 120px;
-
+    height: 80px;
 }
 
-.divider2{
+.divider2{}
 
-    background: url(./wave1\ \(2\).png) center;
-    height: 450px;
-    position: absolute;
-    top: 493px;
-}
+.divider3{}
 
-.divider3{
-    
-}
-
-.vector-divider.divider4{
-
-}
+.vector-divider.divider4{}
 
 .vector-divider.divider5{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(./background2.svg) center fixed no-repeat;
+    /* height: 920px; */
+    filter: drop-shadow(1px 3px 10px #504265);
+    height: fit-content;
+    padding-bottom: 14rem;
 }
 
 #divider-img{
@@ -205,19 +205,19 @@ path{
 }
 
 #title2{
-    font-family: 'montserrat';
-    font-weight: 700;
-    font-size: 6rem;
-    color: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #000000;
     margin: 0;
-    background: #292929;
-    border-radius: 10rem;
-    padding: 1rem 6rem;
+    padding: 1rem 6rem 0rem;
+    padding-inline-start: 0;
     border-style: solid;
     border-color: #00000078;
     border-left: none;
     border-top: none;
     border-right: none;
+    width: 92%;
 }
 
 #servicios-div{
@@ -225,24 +225,83 @@ path{
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-evenly;
-    align-items: center;
     flex-direction: row;
     color: white;
     font-family: sans-serif;
+    margin-top: 3rem;
 }
 
+.accordion-div{
+    display: flex;    
+}
 
-.services{
-    padding: 10rem;
-    margin: 3rem;
-    width: 200px;
+.card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 500px;
+    width: 150px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
     font-size: 1.5rem;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 25px;
     border-color: #5a4972;
     text-align: center;
     background-color: #00000017;
     backdrop-filter: blur(12px);
+    border-top-right-radius: 222px;
+    margin-top: 5rem;
+    color: white;
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.card2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 500px;
+    width: 150px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #5a4972;
+    text-align: center;
+    background-color: #00000017;
+    backdrop-filter: blur(12px);
+    border-bottom-left-radius: 222px;
+    margin-bottom: 5rem;
+    color: white;
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.services.hidden{
+    display: none;
+}
+
+.services{
+    padding: 10rem;
+    width: 200px;
+    font-size: 1.5rem;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #5a4972;
+    text-align: center;
+    background-color: #00000017;
+    backdrop-filter: blur(12px);
+    border-top-right-radius: 222px;
 }
 
 #section2{}
