@@ -29,7 +29,8 @@
     border-style: solid;
     border-color: #000000;
     mix-blend-mode:difference;
-    transition: .2s linear;
+    /* transition: .2s linear; */
+    
   
 }
 
