@@ -48,7 +48,7 @@ nav{
     justify-content: space-around;
     border-radius: 50px;
     border-style: solid;
-    border-color: #5a4972;
+    border-color: #00000078;
     z-index: 3;
 }
 
@@ -75,10 +75,12 @@ ul{
 
  .nav-li a:hover{
     color: black;
+    transition: all 0.5s ease;
 }
 
 .nav-li:hover{
     color: black;
+    transition: all 0.5s ease;
 }
 
 .nav-li a{
@@ -161,8 +163,8 @@ path{
 
 #divisor{
     width: 100vw;
-    transition: all 0.4s ease;
-    background:#927AB8;   
+    /* /* transition: all 0.4s ease; */
+    mix-blend-mode: difference;
 }
 
 .divider1{
@@ -216,7 +218,6 @@ path{
     font-weight: 400;
     font-size: 1.4rem;
     color: #000000;
-    margin: 0;
     padding: 1rem 6rem 0rem 1rem;
     padding-inline-start: 0;
     border-style: solid;
@@ -251,22 +252,21 @@ path{
     flex-wrap: nowrap;
     justify-content: center;
     height: 500px;
-    width: 150px;
+    width: 100px;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: 1.5rem;
     border-style: solid;
     border-radius: 25px;
-    border-color: #5a4972;
+    border-color: #00000078;
     text-align: center;
     background-color: #00000017;
     backdrop-filter: blur(12px);
-    border-top-right-radius: 222px;
+    border-radius: 22px;
     margin-top: 5rem;
     color: white;
     font-family: 'montserrat';
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .card2{
@@ -277,22 +277,21 @@ path{
     flex-wrap: nowrap;
     justify-content: center;
     height: 500px;
-    width: 150px;
+    width: 100px;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    font-size: 1.5rem;
     border-style: solid;
     border-radius: 25px;
-    border-color: #5a4972;
+    border-color: #00000078;
     text-align: center;
     background-color: #00000017;
     backdrop-filter: blur(12px);
-    border-bottom-left-radius: 222px;
+    border-radius: 22px;
     margin-bottom: 5rem;
     color: white;
     font-family: 'montserrat';
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .hidden-cartel{
@@ -300,7 +299,8 @@ path{
 }
 
 .cartel{
-    width: 80vw;
+    /* width: 80vw; */
+    
     height: min-content;
     position: absolute;
     top: -1rem;
@@ -309,23 +309,67 @@ path{
     align-items: center;
     font-family:'soviet_programbold' ;
     font-size: 10rem;
+    mix-blend-mode:difference;
+    transition: all 0.5s ease-in;
+    /* text-shadow: 5px 5px 0px #eb452b, 
+    10px 10px 0px #efa032, 
+    15px 15px 0px #46b59b, 
+    20px 20px 0px #017e7f, 
+    25px 25px 0px #052939, 
+    30px 30px 0px #c11a2b 
+    35px 35px 0px #c11a2b, 
+    40px 40px 0px #c11a2b, 
+    45px 45px 0px #c11a2b; */
+    /* transform: skewY(15deg) translateY(120px); */
+
 }
 
+/* .cartel:focus {
+    background-image: linear-gradient(transparent calc(65% - 5px), #000cc4 5px);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+  } */
+
+  #p1:hover {
+    background-color: #40009a;
+    /* mix-blend-mode: difference; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: inline;
+    transition: 0.5s ease;
+  }
+
 .services{
+    display: none;
 }
 
 .active{
-    padding: 10rem;
-    width: 600px;
+    /* padding: 10rem;
+    width: 600px; */
+    width: 1100px;
+    min-width: 800px;
+    max-width: 1100px;
     font-size: 1.5rem;
     border-style: solid;
     border-radius: 25px;
-    border-color: #5a4972;
+    border-color: #40009a;
     text-align: center;
     background-color: #00000017;
     backdrop-filter: blur(12px);
     border-top-right-radius: 222px;
-    transition: width 0.9s ease;
+    /* transition: 0.9s ease; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#p1{
+    font-family: 'Courier New', Courier, monospace;
+    /* color: #40009a; */
+    width: 70%;
+    text-align: left;
 }
 
 
@@ -342,31 +386,33 @@ path{
 footer{}
 
 .bgr-1{
-    background: url(./background2.svg) center fixed no-repeat;
+    background: url(./backgrounds/backgroundoriginal.svg) fixed;
+    width: 90vw;
+    /* z-index: 1000; */
 }
 
 .bgr0{
-    background: url(./backgrounds/backgroundyellow.svg);
+    background: url(./backgrounds/backgroundyellow\ \(1\).svg) fixed;
     transition: all 0.7s ease;
 }
 
 .bgr1{
-    background: url(./backgrounds/backgroundpink.svg);
+    background: url(./backgrounds/backgroundpink.svg)fixed;
     transition: all 0.7s ease;
 }
 .bgr2{
-    background: url(./backgrounds/backgroundbeige.svg);
+    background: url(./backgrounds/backgroundbeige.svg)fixed;
     transition: all 0.7s ease;
 }
 .bgr3{
-    background: url(./backgrounds/backgroundred.svg);
+    background: url(./backgrounds/backgroundred\ \(1\).svg) fixed;
     transition: all 0.7s ease;
 }
 .bgr4{
-    background: url(./backgrounds/backgroundlightblue.svg);
+    background: url(./backgrounds/backgroundlightblue.svg)fixed;
     transition: all 0.7s ease;
 }
 .bgr5{
-    background: url(./backgrounds/backgroundgreen.svg);
+    background: url(./backgrounds/backgroundgreen.svg)fixed;
     transition: all 0.7s ease;
 }
