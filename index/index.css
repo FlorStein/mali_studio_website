@@ -43,7 +43,7 @@ nav{
     margin-left: 5%;
     margin-top: 20px;
     width: 90vw;
-    background-color: #8671a9;
+    /* background-color: #8671a9; */
     align-items: center;
     justify-content: space-around;
     border-radius: 50px;
@@ -173,18 +173,22 @@ path{
 
 .divider3{}
 
-.vector-divider.divider4{}
+.vector-divider.divider4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .vector-divider.divider5{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: url(./background2.svg) center fixed no-repeat;
     /* height: 920px; */
     filter: drop-shadow(1px 3px 10px #504265);
     height: fit-content;
-    padding-bottom: 14rem;
+    padding-top: 9.8rem;
+    /* transition: all 0.5s ease;   */
 }
 
 #divider-img{
@@ -202,6 +206,9 @@ path{
     flex-direction: column;
     flex-wrap: nowrap;
     position: static;
+
+    margin-top: -51px;
+    padding-bottom: 52px;
 }
 
 #title2{
@@ -210,7 +217,7 @@ path{
     font-size: 1.4rem;
     color: #000000;
     margin: 0;
-    padding: 1rem 6rem 0rem;
+    padding: 1rem 6rem 0rem 1rem;
     padding-inline-start: 0;
     border-style: solid;
     border-color: #00000078;
@@ -232,7 +239,8 @@ path{
 }
 
 .accordion-div{
-    display: flex;    
+    display: flex;
+      
 }
 
 .card{
@@ -287,13 +295,28 @@ path{
     font-size: 2rem;
 }
 
-.services.hidden{
+.hidden-cartel{
     display: none;
 }
 
+.cartel{
+    width: 80vw;
+    height: min-content;
+    position: absolute;
+    top: -1rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    font-family:'soviet_programbold' ;
+    font-size: 10rem;
+}
+
 .services{
+}
+
+.active{
     padding: 10rem;
-    width: 200px;
+    width: 600px;
     font-size: 1.5rem;
     border-style: solid;
     border-radius: 25px;
@@ -302,7 +325,11 @@ path{
     background-color: #00000017;
     backdrop-filter: blur(12px);
     border-top-right-radius: 222px;
+    transition: width 0.9s ease;
 }
+
+
+
 
 #section2{}
 
@@ -313,3 +340,33 @@ path{
 #section5{}
 
 footer{}
+
+.bgr-1{
+    background: url(./background2.svg) center fixed no-repeat;
+}
+
+.bgr0{
+    background: url(./backgrounds/backgroundyellow.svg);
+    transition: all 0.7s ease;
+}
+
+.bgr1{
+    background: url(./backgrounds/backgroundpink.svg);
+    transition: all 0.7s ease;
+}
+.bgr2{
+    background: url(./backgrounds/backgroundbeige.svg);
+    transition: all 0.7s ease;
+}
+.bgr3{
+    background: url(./backgrounds/backgroundred.svg);
+    transition: all 0.7s ease;
+}
+.bgr4{
+    background: url(./backgrounds/backgroundlightblue.svg);
+    transition: all 0.7s ease;
+}
+.bgr5{
+    background: url(./backgrounds/backgroundgreen.svg);
+    transition: all 0.7s ease;
+}
