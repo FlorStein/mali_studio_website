@@ -1,8 +1,8 @@
 #cursor{
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
-    background-color: #292929;
+    background-color: #0e6a00;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,9 +36,9 @@
 }
 
 #cursor.eye{
-    background: url(./eye.svg) center no-repeat;
-    width: 250px;
-    height: 250px;
+    background: url(./eye.png) center no-repeat;
+    width: 200px;
+    height: 200px;
     z-index: 30;
     mix-blend-mode:unset;
     
