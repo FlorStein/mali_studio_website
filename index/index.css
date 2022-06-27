@@ -3,7 +3,36 @@ html{
     cursor: none;
     background: url(./background\ \(1\).png) center fixed no-repeat;
 }
-:root{}
+:root{
+
+    --COLOR-BLACK: #000000;
+    --COLOR-WHITE: #ffffff;
+    /* --COLOR-GRAY: #ff0000; */
+
+    --BACKGROUND--1:url(./backgrounds/backgroundoriginal.svg);
+    --BACKGROUND-0:url(./backgrounds/bauhausyellow.png);
+    --BACKGROUND-1:url(./backgrounds/bauhaus1923.png);
+    --BACKGROUND-2:url(./backgrounds/bauhausblue.png);
+    --BACKGROUND-3:url(./backgrounds/bauhaussun.png);
+    --BACKGROUND-4:url(./backgrounds/bauhausblueeye.png);
+    --BACKGROUND-5:url(./backgrounds/bauhausgreen.png);
+    --BACKGROUND-6:url(./backgrounds/bauhausPINK.png);
+
+    --TRANSITION-1: all 0.7s ease;
+    
+    --BGR-MIN-WIDTH:100px;
+    --BGR-MIN-HEIGHT:400px;
+
+    --BGR-MAX-WIDTH:80vw;
+    --BGR-MAX-HEIGHT:600px;
+
+    --FONT-SOVIETIC:'soviet_programbold';
+
+    --BORDER-RADIUS:25px;
+    --BORDER-RADIUS-B:222px;
+    --BORDER-RADIUS-STYLE: solid;
+
+}
 
 @font-face {
     font-family: 'soviet_programbold';
@@ -11,6 +40,7 @@ html{
          url(./sovietprogram-bold-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
+
 
 }
 ::-webkit-scrollbar{
@@ -38,14 +68,7 @@ body{
     height: 100vh;
     width: 80vw;
 }
-/* #toggle {
 
-    appearance:none;
-  }
-
-  #toggle:checked ~ #header {
-    top: 0;
-  } */
 
 nav{
     display: flex;
@@ -75,20 +98,20 @@ ul{
 }
 
 .nav-li{
-    color: rgb(0, 0, 0);
+    color: var(--COLOR-BLACK);
     font-family: monospace;
     font-size: 1rem;
     padding: 1rem 0.5rem;
 }
 
  .nav-li a:hover{
-    color: rgb(255, 255, 255);
+    color: var(--COLOR-GRAY);
     transition: all 0.5s ease;
     
 }
 
 .nav-li:hover{
-    color: rgb(255, 255, 255);
+    color:var(--COLOR-GRAY);
     transition: all 0.5s ease;
     
 }
@@ -177,45 +200,6 @@ path{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* .card2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    flex-wrap: nowrap;
-    justify-content: center;
-    height: 400px;
-    width: 100px;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    border-style: solid;
-    border-radius: 25px;
-    border-color: #ffffff;
-    text-align: center;
-    border-radius: 22px;
-    margin-bottom: 1rem;
-    color: white;
-    font-family: 'montserrat';
-    font-weight: 400;
-    font-size: 1.2rem;
-    backdrop-filter:blur(20px);
-} */
-
-
-
-
-
   #p1{
     font-family: 'Courier New', Courier, monospace;
     color: #40009a;
@@ -226,10 +210,6 @@ path{
     line-height: normal;
 }
 
-
-/* .services{
-    display: none;
-} */
 
 
 
@@ -255,25 +235,6 @@ footer{}
 
 
 
-
- /* #card0{ 
-    background:url(./backgrounds/fotografia.jpg)  center;
-} */
-/* #card1{
-    background-color:#961d82 ;
-}
-#card2{
-    background-color: #e3d5be;
-}
-#card3{
-    background-color:#ff4b23 ;
-}
-#card4{
-    background-color:#5869ff ;
-}
-#card5{
-    background-color:#007a82;
-}  */
 
 
 .perspective-text {

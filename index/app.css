@@ -15,10 +15,10 @@
 #cursor.mini{
     transform: scale(1.4);
     border-style:solid;
-    background-color: #ffffff30;
+    background-color: #11ff00;
     border-color: #000000;
     border-width: 0.01px;
-    mix-blend-mode:hard-light;
+    mix-blend-mode:difference;
     /* transition:all .5s ease; */
 
 
