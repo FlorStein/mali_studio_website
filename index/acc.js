@@ -4,6 +4,14 @@ const header       =   document.getElementById('header')
 const accordionDiv =   document.querySelectorAll('.accordion-div')
 const services     =   document.querySelectorAll('.services')
 const cartel       =   document.querySelectorAll('.hidden-cartel')
+
+const info0         =   document.getElementById('info0')
+const info1         =   document.getElementById('info1')
+const info2         =   document.getElementById('info2') 
+const info3         =   document.getElementById('info3')
+const info4         =   document.getElementById('info4')
+const info5         =   document.getElementById('info5')
+
 const divider      =   document.getElementById('divider')
 const divisor      =   document.getElementById('divisor')
 
@@ -35,6 +43,7 @@ bgr0.addEventListener('click', ()=>{
     bgr4.style.display = 'none'
     bgr5.style.display = 'none'
     title.classList.add('slidetitle')
+    info0.classList.add('display')
     
 
         bgr0.addEventListener('wheel',()=>{
@@ -48,10 +57,13 @@ bgr0.addEventListener('click', ()=>{
             bgr4.style.display ='flex'
             bgr5.style.display ='flex'
             title.classList.remove('slidetitle')
+            info0.classList.remove('display')
             
         })
 
 })
+
+
 
 bgr1.addEventListener('click', ()=>{
     bgr1.classList.add('active')
@@ -64,6 +76,7 @@ bgr1.addEventListener('click', ()=>{
     bgr4.style.display = 'none'
     bgr5.style.display = 'none'
     title.classList.add('slidetitle')
+    info1.classList.add('display')
     
 
         bgr1.addEventListener('wheel',()=>{
@@ -77,6 +90,7 @@ bgr1.addEventListener('click', ()=>{
             bgr4.style.display ='flex'
             bgr5.style.display ='flex'
             title.classList.remove('slidetitle')
+            info1.classList.remove('display')
             
         })
 })
@@ -92,6 +106,7 @@ bgr2.addEventListener('click', ()=>{
     bgr4.style.display = 'none'
     bgr5.style.display = 'none'
     title.classList.add('slidetitle')
+    info2.classList.add('display')
     
 
         bgr2.addEventListener('wheel',()=>{
@@ -105,6 +120,8 @@ bgr2.addEventListener('click', ()=>{
             bgr4.style.display ='flex'
             bgr5.style.display ='flex'
             title.classList.remove('slidetitle')
+            info2.classList.remove('display')
+
             
         })
 
@@ -121,6 +138,7 @@ bgr3.addEventListener('click', ()=>{
     bgr4.style.display = 'none'
     bgr5.style.display = 'none'
     title.classList.add('slidetitle')
+    info3.classList.add('display')
     
 
         bgr3.addEventListener('wheel',()=>{
@@ -134,6 +152,7 @@ bgr3.addEventListener('click', ()=>{
             bgr4.style.display ='flex'
             bgr5.style.display ='flex'
             title.classList.remove('slidetitle')
+            info3.classList.remove('display')
             
         })
 
@@ -150,6 +169,7 @@ bgr4.addEventListener('click', ()=>{
     bgr0.style.display = 'none'
     bgr5.style.display = 'none'
     title.classList.add('slidetitle')
+    info4.classList.add('display')
     
 
         bgr4.addEventListener('wheel',()=>{
@@ -163,6 +183,7 @@ bgr4.addEventListener('click', ()=>{
             bgr0.style.display ='flex'
             bgr5.style.display ='flex'
             title.classList.remove('slidetitle')
+            info4.classList.remove('display')
             
 
         })
@@ -180,6 +201,7 @@ bgr5.addEventListener('click', ()=>{
     bgr4.style.display = 'none'
     bgr0.style.display = 'none'
     title.classList.add('slidetitle')
+    info5.classList.add('display')
     
 
         bgr5.addEventListener('wheel',()=>{
@@ -193,6 +215,7 @@ bgr5.addEventListener('click', ()=>{
             bgr4.style.display ='flex'
             bgr0.style.display ='flex'
             title.classList.remove('slidetitle')
+            info5.classList.remove('display')
            
         })
 
