@@ -11,6 +11,7 @@ const info2         =   document.getElementById('info2')
 const info3         =   document.getElementById('info3')
 const info4         =   document.getElementById('info4')
 const info5         =   document.getElementById('info5')
+const info6         =   document.getElementById('info6')
 
 const divider      =   document.getElementById('divider')
 const divisor      =   document.getElementById('divisor')
@@ -23,13 +24,23 @@ const bgr2         =   document.getElementById('bgr2')
 const bgr3         =   document.getElementById('bgr3')
 const bgr4         =   document.getElementById('bgr4')
 const bgr5         =   document.getElementById('bgr5')
+const bgr6         =   document.getElementById('bgr6') 
 
 const cartel0       =   document.getElementById('cartel0')
 const cartel1       =   document.getElementById('cartel1') 
 const cartel2       =   document.getElementById('cartel2') 
 const cartel3       =   document.getElementById('cartel3') 
 const cartel4       =   document.getElementById('cartel4') 
-const cartel5       =   document.getElementById('cartel5')  
+const cartel5       =   document.getElementById('cartel5')
+const cartel6       =   document.getElementById('cartel6')  
+
+const card0         =   document.getElementById('card0')
+const card1         =   document.getElementById('card1')
+const card2         =   document.getElementById('card2')
+const card3         =   document.getElementById('card3')
+const card4         =   document.getElementById('card4')
+const card5         =   document.getElementById('card5')
+const card6         =   document.getElementById('card6')
 
 
 bgr0.addEventListener('click', ()=>{
@@ -42,8 +53,10 @@ bgr0.addEventListener('click', ()=>{
     bgr3.style.display = 'none'
     bgr4.style.display = 'none'
     bgr5.style.display = 'none'
+    bgr6.style.display = 'none'
     title.classList.add('slidetitle')
     info0.classList.add('display')
+    card0.style.display = 'none'
     
 
         bgr0.addEventListener('wheel',()=>{
@@ -56,8 +69,10 @@ bgr0.addEventListener('click', ()=>{
             bgr3.style.display ='flex'
             bgr4.style.display ='flex'
             bgr5.style.display ='flex'
+            bgr6.style.display = 'flex'
             title.classList.remove('slidetitle')
             info0.classList.remove('display')
+            card0.style.display = 'flex'
             
         })
 
@@ -75,8 +90,10 @@ bgr1.addEventListener('click', ()=>{
     bgr3.style.display = 'none'
     bgr4.style.display = 'none'
     bgr5.style.display = 'none'
+    bgr6.style.display = 'none'
     title.classList.add('slidetitle')
     info1.classList.add('display')
+    card1.style.display = 'none'
     
 
         bgr1.addEventListener('wheel',()=>{
@@ -89,8 +106,10 @@ bgr1.addEventListener('click', ()=>{
             bgr3.style.display ='flex'
             bgr4.style.display ='flex'
             bgr5.style.display ='flex'
+            bgr6.style.display = 'flex'
             title.classList.remove('slidetitle')
             info1.classList.remove('display')
+            card1.style.display = 'flex'
             
         })
 })
@@ -105,8 +124,10 @@ bgr2.addEventListener('click', ()=>{
     bgr3.style.display = 'none'
     bgr4.style.display = 'none'
     bgr5.style.display = 'none'
+    bgr6.style.display = 'none'
     title.classList.add('slidetitle')
     info2.classList.add('display')
+    card2.style.display = 'none'
     
 
         bgr2.addEventListener('wheel',()=>{
@@ -119,8 +140,10 @@ bgr2.addEventListener('click', ()=>{
             bgr3.style.display ='flex'
             bgr4.style.display ='flex'
             bgr5.style.display ='flex'
+            bgr6.style.display = 'flex'
             title.classList.remove('slidetitle')
             info2.classList.remove('display')
+            card2.style.display = 'flex'
 
             
         })
@@ -137,8 +160,10 @@ bgr3.addEventListener('click', ()=>{
     bgr0.style.display = 'none'
     bgr4.style.display = 'none'
     bgr5.style.display = 'none'
+    bgr6.style.display = 'none'
     title.classList.add('slidetitle')
     info3.classList.add('display')
+    card3.style.display = 'none'
     
 
         bgr3.addEventListener('wheel',()=>{
@@ -151,8 +176,10 @@ bgr3.addEventListener('click', ()=>{
             bgr0.style.display ='flex'
             bgr4.style.display ='flex'
             bgr5.style.display ='flex'
+            bgr6.style.display = 'flex'
             title.classList.remove('slidetitle')
             info3.classList.remove('display')
+            card3.style.display = 'flex'
             
         })
 
@@ -168,8 +195,10 @@ bgr4.addEventListener('click', ()=>{
     bgr3.style.display = 'none'
     bgr0.style.display = 'none'
     bgr5.style.display = 'none'
+    bgr6.style.display = 'none'
     title.classList.add('slidetitle')
     info4.classList.add('display')
+    card4.style.display = 'none'
     
 
         bgr4.addEventListener('wheel',()=>{
@@ -182,8 +211,10 @@ bgr4.addEventListener('click', ()=>{
             bgr3.style.display ='flex'
             bgr0.style.display ='flex'
             bgr5.style.display ='flex'
+            bgr6.style.display = 'flex'
             title.classList.remove('slidetitle')
             info4.classList.remove('display')
+            card4.style.display = 'flex'
             
 
         })
@@ -200,8 +231,10 @@ bgr5.addEventListener('click', ()=>{
     bgr3.style.display = 'none'
     bgr4.style.display = 'none'
     bgr0.style.display = 'none'
+    bgr6.style.display = 'none'
     title.classList.add('slidetitle')
     info5.classList.add('display')
+    card5.style.display = 'none'
     
 
         bgr5.addEventListener('wheel',()=>{
@@ -214,8 +247,45 @@ bgr5.addEventListener('click', ()=>{
             bgr3.style.display ='flex'
             bgr4.style.display ='flex'
             bgr0.style.display ='flex'
+            bgr6.style.display = 'flex'
             title.classList.remove('slidetitle')
             info5.classList.remove('display')
+            card5.style.display = 'flex'
+           
+        })
+
+})
+
+bgr6.addEventListener('click', ()=>{
+    bgr6.classList.add('active')
+    cartel6.classList.add('cartel')
+    divisor.classList.add('bgr6')
+    divider.classList.add('bgr6')
+    bgr1.style.display = 'none'
+    bgr2.style.display = 'none'
+    bgr3.style.display = 'none'
+    bgr4.style.display = 'none'
+    bgr0.style.display = 'none'
+    bgr5.style.display = 'none'
+    title.classList.add('slidetitle')
+    info6.classList.add('display')
+    card6.style.display = 'none'
+    
+
+        bgr6.addEventListener('wheel',()=>{
+            bgr6.classList.remove('active')
+            cartel6.classList.remove('cartel')
+            divisor.classList.remove('bgr6')
+            divider.classList.remove('bgr6')
+            bgr1.style.display ='flex'
+            bgr2.style.display ='flex'
+            bgr3.style.display ='flex'
+            bgr4.style.display ='flex'
+            bgr0.style.display ='flex'
+            bgr5.style.display ='flex'
+            title.classList.remove('slidetitle')
+            info6.classList.remove('display')
+            card6.style.display = 'flex'
            
         })
 
