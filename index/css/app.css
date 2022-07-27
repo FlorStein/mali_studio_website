@@ -36,7 +36,7 @@
 }
 
 #cursor.eye{
-    background: url(./eye.png) center no-repeat;
+    background: url(../backgrounds/eye.png) center no-repeat;
     width: 200px;
     height: 200px;
     z-index: 30;
