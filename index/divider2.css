@@ -74,7 +74,8 @@
     align-items: center;
     justify-content: center;
     width: var(--BGR-MIN-WIDTH);
-    height: var(----BGR-MIN-HEIGHT);
+    height: var(--BGR-MIN-HEIGHT);
+    /* color: var(--COLOR-WHITE); */
 }
 .card.display{
     writing-mode: vertical-lr;
@@ -112,35 +113,44 @@
     /* transform: skewY(15deg) translateY(120px);*/
 }
 .bgr-1{
-    background:var(--BACKGROUND--1) fixed;
+    /* background:var(--BACKGROUND--1) fixed; */
+    background-color:#927ab8;
+    border-style: solid;
 }
 .bgr0{
     background:var(--BACKGROUND-0) fixed;
     transition: var(--TRANSITION-1);  
+    /* mix-blend-mode: luminosity; */
 }
 .bgr1{
     background:var(--BACKGROUND-1) fixed;
     transition: var(--TRANSITION-1);
+    /* mix-blend-mode: luminosity; */
 }
 .bgr2{
     background:var(--BACKGROUND-2)  fixed;
     transition: var(--TRANSITION-1);
+    /* mix-blend-mode: luminosity; */
 }
 .bgr3{
     background: var(--BACKGROUND-3) fixed;
     transition: var(--TRANSITION-1);
+    /* mix-blend-mode: luminosity; */
 }
 .bgr4{
     background: var(--BACKGROUND-4)fixed;
     transition: var(--TRANSITION-1);
+    /* mix-blend-mode: luminosity; */
 }
 .bgr5{
     background:var(--BACKGROUND-5)fixed;
     transition: var(--TRANSITION-1);
+    /* mix-blend-mode: luminosity; */
 }
 .bgr6{
     background:var(--BACKGROUND-6)fixed;
     transition: var(--TRANSITION-1);
+    /* mix-blend-mode: luminosity; */
 }
 #bgr0{
     width: var(--BGR-MIN-WIDTH);
@@ -153,7 +163,9 @@
 }
 #bgr0:hover{
     background: var(--BACKGROUND-0)  fixed ;
-    color: var(--COLOR-BLACK);    
+    /* mix-blend-mode: luminosity; */
+    color: var(--COLOR-BLACK);
+    border-color:var(--COLOR-BLACK);    
 }
 #bgr1{
     background-size: cover;
@@ -167,7 +179,9 @@
 }
 #bgr1:hover{
      background:var(--BACKGROUND-1)  fixed;
+     /* mix-blend-mode: luminosity; */
      color: var(--COLOR-BLACK);
+     border-color:var(--COLOR-BLACK); 
 }
 #bgr2{
     transition: var(--TRANSITION-1);
@@ -180,7 +194,9 @@
 }
 #bgr2:hover{
     background:var(--BACKGROUND-2)  fixed;
+    /* mix-blend-mode: luminosity; */
     color: var(--COLOR-BLACK);   
+    border-color:var(--COLOR-BLACK); 
 }
 #bgr3{
     transition: var(--TRANSITION-1);
@@ -193,7 +209,9 @@
 }
 #bgr3:hover{
     background:var(--BACKGROUND-3) fixed;
-    color: var(--COLOR-BLACK);   
+    /* mix-blend-mode: luminosity; */
+    color: var(--COLOR-BLACK);  
+    border-color:var(--COLOR-BLACK);  
 }
 #bgr4{
     transition: var(--TRANSITION-1);
@@ -206,7 +224,9 @@
 }
 #bgr4:hover{
     background:var(--BACKGROUND-4)  fixed;
+    /* mix-blend-mode: luminosity; */
     color: var(--COLOR-BLACK);
+    border-color:var(--COLOR-BLACK); 
 }
 #bgr5{
     transition: var(--TRANSITION-1);
@@ -219,7 +239,9 @@
 }
 #bgr5:hover{
     background: var(--BACKGROUND-5)  fixed;
+    /* mix-blend-mode: luminosity; */
     color: var(--COLOR-BLACK);   
+    border-color:var(--COLOR-BLACK); 
 }
 #bgr6{
     transition: var(--TRANSITION-1);
@@ -231,7 +253,9 @@
 }
 #bgr6:hover{
     background:var(--BACKGROUND-6) fixed;
-    color: var(--COLOR-BLACK);   
+    /* mix-blend-mode: luminosity; */
+    color: var(--COLOR-BLACK);  
+    border-color:var(--COLOR-BLACK);  
 }
 .services.active{
     width: 80vw !important;
@@ -248,6 +272,7 @@
     border-top-right-radius: var(--BORDER-RADIUS-B) !important; 
     border-top-left-radius: var(--BORDER-RADIUS-B) !important; 
     border-radius: var(--BORDER-RADIUS);
+    
 }
 .info{
     display: none;
@@ -263,7 +288,7 @@
     padding: 2rem 3rem;
     border-style: var(--BORDER-RADIUS-STYLE);
     border-radius: var(--BORDER-RADIUS);
-    border-color: var(--COLOR-WHITE);
+    /* border-color: var(--COLOR-WHITE); */
     transition: var(--TRANSITION-1);
 }
 .display{
@@ -273,5 +298,9 @@
     color: var(--COLOR-BLACK);
     font-family: monospace;
     height: fit-content;
+    
+    
 }
+
+
 

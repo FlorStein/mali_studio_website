@@ -1,7 +1,7 @@
 html{
     scroll-behavior: smooth;
     cursor: none;
-    background: url(./background\ \(1\).png) center fixed no-repeat;
+    background: url(./backgrounds/backgroundoriginal.svg) center fixed no-repeat;
 }
 :root{
 
@@ -10,13 +10,13 @@ html{
     /* --COLOR-GRAY: #ff0000; */
 
     --BACKGROUND--1:url(./backgrounds/backgroundoriginal.svg);
-    --BACKGROUND-0:url(./backgrounds/bauhausyellow.png);
-    --BACKGROUND-1:url(./backgrounds/bauhaus1923.png);
-    --BACKGROUND-2:url(./backgrounds/bauhausblue.png);
-    --BACKGROUND-3:url(./backgrounds/bauhaussun.png);
-    --BACKGROUND-4:url(./backgrounds/bauhausblueeye.png);
-    --BACKGROUND-5:url(./backgrounds/bauhausgreen.png);
-    --BACKGROUND-6:url(./backgrounds/bauhausPINK.png);
+    --BACKGROUND-0:url(./backgrounds2/brg2\ \(2\).png);
+    --BACKGROUND-1:url(./backgrounds2/produccion.png);
+    --BACKGROUND-2:url(./backgrounds2/asesoria-virtual.png);
+    --BACKGROUND-3:url(./backgrounds2/campaign.png);
+    --BACKGROUND-4:url(./backgrounds2/social-media.png);
+    --BACKGROUND-5:url(./backgrounds2/brand-content.png);
+    --BACKGROUND-6:url(./backgrounds2/design.png);
 
     --TRANSITION-1: all 0.7s ease;
     
@@ -47,6 +47,12 @@ html{
     display: none;
 }
 
+::selection{
+  background-color: #5a4972;
+  color: #ffffff;
+  /* mix-blend-mode: difference; */
+}
+
 a{
     cursor: none;
 }
@@ -65,8 +71,8 @@ body{
 
 #header{
     
-    height: 100vh;
-    width: 80vw;
+    min-height: 100vh;
+    max-width: 70vw;
 }
 
 
@@ -74,7 +80,8 @@ nav{
     display: flex;
     position: fixed;
     margin-top: 20px;
-    width: 80vw;
+    max-width: 80vw;
+    min-width: 70vw;
     align-items: center;
     justify-content: space-around;
     border-radius: 50px;
@@ -82,9 +89,13 @@ nav{
     border-color: #00000078;
     z-index: 3;
     backdrop-filter: blur(30px);
+    
 }
 
-#logo{}
+#logo{
+  width: 8rem;
+  height: auto;
+}
 
 ul{
     display: flex;
@@ -92,9 +103,10 @@ ul{
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: center;
-    padding-left: 400px;
+    /* padding-left: 400px; */
     list-style: none;
     margin: 0;
+    word-spacing: -0.35rem;
 }
 
 .nav-li{
@@ -105,20 +117,18 @@ ul{
 }
 
  .nav-li a:hover{
-    color: var(--COLOR-GRAY);
     transition: all 0.5s ease;
     
 }
 
 .nav-li:hover{
-    color:var(--COLOR-GRAY);
     transition: all 0.5s ease;
     
 }
 
 .nav-li a{
    text-decoration: none;
-   color: rgb(0, 0, 0);
+   color: var(--COLOR-BLACK);
    padding: 1rem 0.5rem;   
 }
 
@@ -126,8 +136,9 @@ ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 80vw;
+    justify-content: space-between;
+    max-width: 70vw;
+    min-height: 70vh;
 }
 
 #since{
@@ -159,7 +170,31 @@ path{
 
 #hero_img{
     padding: 2rem 1rem 2rem 0rem; 
-    transform: scale(.8);  
+    /* transform: scale(.8);   */
+}
+
+
+#hero__p{
+  /* padding: 2rem 1rem 2rem 0rem; */
+  font-size: 9rem;
+  font-family: var(--FONT-SOVIETIC);
+  color: var(--COLOR-WHITE);
+  /* text-shadow: -5px -5px 0px #eb452b, 
+  -10px -8px 0px #c532ef, 
+  -15px -15px 0px #46b59b, 
+  -10px -8px 0px #017e7f, 
+  -25px -25px 0px #052939; */
+  transform: skewY(180deg);
+  line-height: 8rem;
+  height: max-content;
+  text-align: end;
+  /* text-align-last: center; */
+
+  /* 30px 30px 0px #c11a2b, 
+  35px 35px 0px #c11a2b, 
+  40px 40px 0px #c11a2b, 
+  45px 45px 0px #c11a2b;  */
+  /* transform: skewY(349deg); */
 }
 
 
@@ -200,27 +235,6 @@ path{
 }
 
 
-  #p1{
-    font-family: 'Courier New', Courier, monospace;
-    color: #40009a;
-    width: 70%;
-    font-size: 1.2rem;
-    text-align: left;
-    height: fit-content;
-    line-height: normal;
-}
-
-
-
-
-
-#asesoriavirtual{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
-    font-size: 1.2rem;
-    color: #b23900;
-}
-
 
 #section2{}
 
@@ -231,10 +245,6 @@ path{
 #section5{}
 
 footer{}
-
-
-
-
 
 
 .perspective-text {
