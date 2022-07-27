@@ -56,6 +56,7 @@
     flex-direction: row;
     color:var(--COLOR-WHITE);
     font-family: sans-serif;
+    border-color: var(--COLOR-BLACK);
 }
 .accordion-div{
     display: flex;
@@ -284,7 +285,8 @@
     margin-top: 10rem;
     font-size: 1.3rem;
     line-height: 2.5rem;
-    backdrop-filter: blur(50px);
+    /* backdrop-filter: blur(50px); */
+    background-color:var(--COLOR-LILA);
     padding: 2rem 3rem;
     border-style: var(--BORDER-RADIUS-STYLE);
     border-radius: var(--BORDER-RADIUS);

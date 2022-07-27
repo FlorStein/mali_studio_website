@@ -7,6 +7,8 @@ html{
 
     --COLOR-BLACK: #000000;
     --COLOR-WHITE: #ffffff;
+    --COLOR-LILA: #eadcff;
+    --COLOR-DARKLILA: #927AB8;
     /* --COLOR-GRAY: #ff0000; */
 
     --BACKGROUND--1:url(./backgrounds/backgroundoriginal.svg);
@@ -88,7 +90,8 @@ nav{
     border-style: solid;
     border-color: #00000078;
     z-index: 3;
-    backdrop-filter: blur(30px);
+    /* backdrop-filter: blur(30px); */
+    background-color: var(--COLOR-DARKLILA);
     
 }
 
