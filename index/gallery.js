@@ -43,7 +43,7 @@ class Example {
             image.classList.remove('-active');
         });
 
-        setTimeout(this.showImages.bind(this), 2000);
+        setTimeout(this.showImages.bind(this), 3000);
     }
 }
 
@@ -53,3 +53,21 @@ window.addEventListener('DOMContentLoaded', (event) => {
         root: document.querySelector('.scroll-animations-example')
     });
 });
+
+
+function nav() {
+    document.getElementById('port').classList.add('navBarDark');   
+}
+
+function navNot(){
+    document.getElementById('port').classList.remove('navBarDark'); 
+
+}
+// const img = document.querySelector('.image');
+// const portfolio = document.getElementById('port')
+
+// img.addEventListener('click', ()=>{
+
+//     nav.classList.add('background')
+
+// })

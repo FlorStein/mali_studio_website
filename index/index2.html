@@ -20,19 +20,22 @@
     <script defer src="./js/app.js"></script>
     <script defer src="./js/text.js"></script>   
     <script defer src="./js/acc.js"></script>
+
+    <link rel="stylesheet" href="./gallery.css">
+    <script defer src="./gallery.js"></script>
     
 
 
 </head>
 <body>
-    <nav>
+    <nav id="port" class="00">
         <img src="./backgrounds/mali logo ok 2_negro.png" alt="logo mali" id="logo">
         <ul>
             <li class="nav-li">
-                <a href="#header">Home</a></li>
-            <li class="nav-li"><a href="#divisor">Nuestros servicios</a></li>
+                <a href="#header" class="nav-li" onclick="navNot()">Home</a></li>
+            <li class="nav-li"><a href="#divisor" class="nav-li" onclick="navNot()">Nuestros servicios</a></li>
             <li class="nav-li">Por qué nosotros</li>
-            <li class="nav-li"><a href="./gallery.html"> Porfolio </a></li>
+            <li class="nav-li"><a href="#portfolio" onclick="nav()" class="nav-li"> Porfolio </a></li>
             <li class="nav-li">Quiénes somos</li>
             <li class="nav-li">Contacto</li>   
         </ul>
@@ -152,7 +155,85 @@
             </div>
         </div>
     
-     <section>
+     <section id="portfolio">
+        <link rel='stylesheet' href='https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css' />
+    <script src='https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js'></script>
+    
+    <div class='scroll-animations-example' data-scroll-container>
+        <div class='scrollsection' data-scroll-section>
+            <div class='item -normal' data-scroll data-scroll-speed="2">
+                <img class='image' src='./gallery photos/1.jpg'>
+            </div>
+            <div class='item -big' data-scroll data-scroll-speed="1">
+                <img class='image' src='./gallery photos/2.jpg'>
+            </div>
+            <div class='item -small -horizontal' data-scroll data-scroll-speed="4">
+                <img class='image' src='./gallery photos/3.jpg'>
+            </div>
+            <div class='item -normal' data-scroll data-scroll-speed="3">
+                <img class='image' src='./gallery photos/4.jpg'>
+            </div>
+            <div class='item -normal -horizontal' data-scroll data-scroll-speed="2">
+                <img class='image' src='./gallery photos/5.jpg'>
+            </div>
+            <div class='item -big -horizontal' data-scroll data-scroll-speed="4">
+                <img class='image' src='./gallery photos/6.jpg'>
+            </div>
+            <div class='item -small' data-scroll data-scroll-speed="2">
+                <img class='image' src='./gallery photos/7.jpg'>
+            </div>
+            <div class='item -normal -horizontal' data-scroll data-scroll-speed="1">
+                <img class='image' src='./gallery photos/8.jpg'>
+            </div>
+            <div class='item -small -horizontal' data-scroll data-scroll-speed="3">
+                <img class='image' src='./gallery photos/9.jpg'>
+            </div>
+            <div class='item -big' data-scroll data-scroll-speed="1">
+                <img class='image' src='./gallery photos/10.jpg'>
+            </div>
+            
+            <div class='item -normal -horizontal' data-scroll data-scroll-speed="2">
+                <img class='image' src='./gallery photos/11.jpg'>
+            </div>
+            <div class='item -normal -horizontal' data-scroll data-scroll-speed="1">
+                <img class='image' src='./gallery photos/12.jpg'>
+            </div>
+            <div class='item -small -horizontal' data-scroll data-scroll-speed="4">
+                <img class='image' src='./gallery photos/13.JPG'>
+            </div>
+            <div class='item -big' data-scroll data-scroll-speed="3">
+                <img class='image' src='./gallery photos/14.JPG'>
+            </div>
+            <div class='item -normal -horizontal' data-scroll data-scroll-speed="2">
+                <img class='image' src='./gallery photos/15.JPG'>
+            </div>
+            <div class='item -small -horizontal' data-scroll data-scroll-speed="4">
+                <img class='image' src='./gallery photos//16.jpg'>
+            </div>
+            <div class='item -big' data-scroll data-scroll-speed="2">
+                <img class='image' src='./gallery photos/17.jpg'>
+            </div>
+            <div class='item -normal -horizontal' data-scroll data-scroll-speed="1">
+                <img class='image' src='./gallery photos/18.jpg'>
+            </div>
+            <div class='item -small -horizontal' data-scroll data-scroll-speed="3">
+                <img class='image' src='./gallery photos/19.jpg'>
+            </div>
+            <div class='item -normal' data-scroll data-scroll-speed="1">
+                <img class='image' src='./gallery photos/20.jpg'>
+            </div>
+        </div>
+    </div>
+    
+    <div class='fake-ui'>
+        <div class='logo'></div>
+        <div class='nav'>
+            <span class='item'></span>
+            <span class='item'></span>
+            <span class='item'></span>
+        </div>
+        <div class='footer'></div>
+    </div> 
     </section>
 <!-- 
     <section id="section2">
