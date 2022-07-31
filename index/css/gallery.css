@@ -1,16 +1,51 @@
-html,
+/* html,
 body {
   height: 100%;
   background: #eee;
+} */
+/* body {
+  overflow: hidden;
+} */
+.navBarDark{
+  background-color: #767373;
+  mix-blend-mode: difference;
+
+}
+.image{
+  object-fit: contain;
 }
 
-body {
-  overflow: hidden;
+@keyframes backgrounddark {
+  0% {
+      background-color: transparent;  
+  }
+  0.3% {
+      background-color: #000000;
+  }
+  100% {
+    background-color: transparent;  
+}
+
+}
+
+
+#portfolio{
+  position: sticky;
+  margin-left: 238rem;
+  transition: background-color 1000ms linear;
+  animation-duration: 5000s;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  -webkit-transition: background-color 1000ms linear;
+  animation-name: backgrounddark;
+  /* backdrop-filter: blur(30px); */
+  cursor: none;
+
 }
 
 .scroll-animations-example > .scrollsection {
-  padding: 10vh 10vh 10vh 10vmax;
-  min-width: 550vh;
+  padding: 20vh 10vh 10vh 10vmax;
+  min-width: 710vh;
 }
 .scroll-animations-example > .scrollsection > .item {
   display: inline-block;
@@ -18,18 +53,18 @@ body {
   margin: 0 -30vh 0 3vh;
 }
 .scroll-animations-example > .scrollsection > .item::before {
-  content: "";
+  content: '';
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
 .scroll-animations-example > .scrollsection > .item.-big {
-  height: 80vh;
+  height: 70vh;
   width: 60vh;
 }
 .scroll-animations-example > .scrollsection > .item.-big.-horizontal {
   height: 60vh;
-  width: 80vh;
+  width: 70vh;
 }
 .scroll-animations-example > .scrollsection > .item.-normal {
   height: 60vh;
@@ -47,13 +82,13 @@ body {
   bottom: -5vh;
 }
 .scroll-animations-example > .scrollsection > .item.-small {
-  height: 40vh;
-  width: 30vh;
+  height: 50vh;
+  width: 40vh;
   z-index: 2;
 }
 .scroll-animations-example > .scrollsection > .item.-small.-horizontal {
-  height: 30vh;
-  width: 40vh;
+  height: 40vh;
+  width: 50vh;
 }
 .scroll-animations-example > .scrollsection > .item.-small:nth-of-type(3n) {
   bottom: 13vh;
@@ -71,35 +106,37 @@ body {
   opacity: 0;
   pointer-events: none;
   transform: translateX(0) translateY(0) scale(1);
-  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+  transition: filter .3s ease, opacity 1s ease, transform 1s ease;
 }
 .scroll-animations-example > .scrollsection > .item:nth-of-type(4n) > .image {
-  transform: translateX(-30vh) translateY(-30vh) scale(0.8);
+  transform: translateX(-30vh) translateY(-30vh) scale(1);
   transition-delay: 0;
 }
 .scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 1) > .image {
-  transform: translateX(30vh) translateY(30vh) scale(0.8);
-  transition-delay: 0.05s;
+  transform: translateX(30vh) translateY(30vh) scale(1);
+  transition-delay: .05s;
 }
 .scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 2) > .image {
-  transform: translateX(-30vh) translateY(30vh) scale(0.8);
-  transition-delay: 0.1s;
+  transform: translateX(-30vh) translateY(30vh) scale(1);
+  transition-delay: .1s;
 }
 .scroll-animations-example > .scrollsection > .item:nth-of-type(4n - 3) > .image {
-  transform: translateX(-30vh) translateY(-30vh) scale(0.8);
-  transition-delay: 0.15s;
+  transform: translateX(-30vh) translateY(-30vh) scale(1);
+  transition-delay: .15s;
 }
 .scroll-animations-example > .scrollsection > .item > .image.-active {
   transform: translateX(0) translateY(0) scale(1);
-  opacity: 0.8;
+  opacity: .8;
   pointer-events: auto;
-  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+  transition: filter .3s ease, opacity 1s ease, transform 1s ease;
 }
 .scroll-animations-example > .scrollsection > .item > .image.-clicked {
-  transform: translateX(0) translateY(0) scale(5);
-  opacity: 0;
+  transform: translateX(0) translateY(0) scale(1.8);
+  opacity: 1;
   pointer-events: auto;
-  transition: filter 0.3s ease, opacity 1s ease, transform 1s ease;
+  transition: filter .3s ease, opacity 1s ease, transform 1s ease;
+  filter: grayscale(0);
+  
 }
 .scroll-animations-example > .scrollsection > .item > .image.-active:hover {
   height: 100%;
@@ -109,5 +146,48 @@ body {
   left: 0;
   filter: grayscale(0);
   opacity: 1;
-  cursor: pointer;
-}/*# sourceMappingURL=gallery.css.map */
+  /* cursor: pointer; */
+  transform: scale(1.5);
+  
+}
+
+
+
+/* .fake-ui {
+  font-size: 0;
+}
+.fake-ui > .logo {
+  position: fixed;
+  top: 2vh;
+  left: 2vh;
+  height: 3vh;
+  width: 2.5vh;
+  border: solid 1vh #999;
+}
+.fake-ui > .nav {
+  position: fixed;
+  top: 2vh;
+  right: 2vh;
+}
+.fake-ui > .nav > .item {
+  background: #999;
+  display: inline-block;
+  height: 2vh;
+  width: 10vh;
+  margin-left: 2vh;
+}
+.fake-ui > .footer {
+  position: fixed;
+  bottom: 3vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2vh;
+  width: 40vh;
+  background: #999;
+} */
+
+/* 
+.background{
+  color: white;
+  background-color: black;
+} */

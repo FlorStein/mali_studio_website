@@ -60,6 +60,46 @@ $(document).ready(function(){
      
     })
 
+    $('#webdesign').on({
+        'mouseover' : function(){
+            $('#cursor').addClass('prices')
+        },
+        'mouseout' : function (){
+            $('#cursor').removeClass('prices')
+          
+        }
+    })
+
+    $('#fotog').on({
+        'mouseover' : function(){
+            $('#cursor').addClass('fotog')
+        },
+        'mouseout' : function (){
+            $('#cursor').removeClass('fotog')
+          
+        }
+    })
+
+    $('#fotop').on({
+        'mouseover' : function(){
+            $('#cursor').addClass('fotop')
+        },
+        'mouseout' : function (){
+            $('#cursor').removeClass('fotop')
+          
+        }
+    })
+
+    $('#branding').on({
+        'mouseover' : function(){
+            $('#cursor').addClass('branding')
+        },
+        'mouseout' : function (){
+            $('#cursor').removeClass('branding')
+          
+        }
+    })
+
 
 
 })

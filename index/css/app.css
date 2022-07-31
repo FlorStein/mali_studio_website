@@ -45,4 +45,42 @@
 
 }
 
+#cursor.prices{
+    /* transform: scale(2.5); */
+    background: url(../images/Web\ Design.svg) center no-repeat;
+    width: 100px;
+    height: 300px;
+    /* border-style: solid;
+    border-color: #000000; */
+    mix-blend-mode: unset;
+    cursor: none;
+    
+    
+}
+
+#cursor.fotog{
+    background: url(../images/Fotografía.svg) center no-repeat;
+    width: 100px;
+    height: 300px;
+    mix-blend-mode: unset;
+
+}
+
+#cursor.fotop{
+    background: url(../images/Foto\ Producto.svg) center no-repeat;
+    width: 100px;
+    height: 400px;
+    mix-blend-mode: unset;
+
+}
+
+#cursor.branding{
+    background: url(../images/Branding.svg) center no-repeat;
+    width: 100px;
+    height: 300px;
+    mix-blend-mode: unset;
+
+}
+
+
 /* cursor click */

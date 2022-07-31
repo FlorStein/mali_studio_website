@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MALI STUDIO</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
@@ -14,29 +14,30 @@
     <link rel="stylesheet" href="./css/text.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./divider2.css">
-    <link rel="stylesheet" href="./css/gallery.scss">
+    <link rel="stylesheet" href="./css/divider2.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/pricing.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="./js/app.js"></script>
     <script defer src="./js/text.js"></script>   
     <script defer src="./js/acc.js"></script>
+    <script defer src="./js/pricing.js"></script>
 
-    <link rel="stylesheet" href="./gallery.css">
-    <script defer src="./gallery.js"></script>
+    <script defer src="./js/gallery.js"></script>
     
 
 
 </head>
 <body>
-    <nav id="port" class="00">
+    <nav id="port" class="00 nav">
         <img src="./backgrounds/mali logo ok 2_negro.png" alt="logo mali" id="logo">
-        <ul>
+        <ul class="ul">
             <li class="nav-li">
                 <a href="#header" class="nav-li" onclick="navNot()">Home</a></li>
             <li class="nav-li"><a href="#divisor" class="nav-li" onclick="navNot()">Nuestros servicios</a></li>
-            <li class="nav-li">Por qué nosotros</li>
+            <li class="nav-li"><a href="#pricing2">Por qué nosotros</a></li>
             <li class="nav-li"><a href="#portfolio" onclick="nav()" class="nav-li"> Porfolio </a></li>
-            <li class="nav-li">Quiénes somos</li>
+            <li class="nav-li"><a href="#pricing" onclick="navNot()"> Pricing </a></li>
             <li class="nav-li">Contacto</li>   
         </ul>
     </nav>
@@ -50,7 +51,7 @@
             </div>
             <div id="hero_img">
                
-                <p id="hero__p">ORIGINAL IN DIGITAL</p>
+                <p class="p" id="hero__p">ORIGINAL IN DIGITAL</p>
             </div>
         </div>
         <div>
@@ -224,17 +225,317 @@
             </div>
         </div>
     </div>
-    
-    <div class='fake-ui'>
-        <div class='logo'></div>
-        <div class='nav'>
-            <span class='item'></span>
-            <span class='item'></span>
-            <span class='item'></span>
-        </div>
-        <div class='footer'></div>
-    </div> 
     </section>
+
+    <section id="pricing">
+        <div id="hero1">
+            <div class="hero">
+              <figure class="on">
+               
+                <img src="./backgrounds2/brand-content.png" class="hero_img" id="webdesign"/>
+                <div class="div1">
+                  <h2>WEB DESIGN</h2>
+                  <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
+                </div>
+                <div id="tbl-header">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Basic</th>
+                          <th>Medium</th>
+                          <th>Advance</th>
+                          <th>Next level</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div id="tbl-content">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td>PRECIOS</td>
+                          <td>200dls</td>
+                          <td>500dls</td>
+                          <td>900dls</td>
+                          <td>1500dls</td>
+                        </tr>
+                        <tr>
+                          <td>Design complexity</td>
+                          <td>low-basic</td>
+                          <td>basic-medium</td>
+                          <td>medium</td>
+                          <td>high</td>
+                        </tr>
+                        <tr>
+                          <td>Animation complexity</td>
+                          <td>low-basic</td>
+                          <td>basic-medium</td>
+                          <td>medium</td>
+                          <td>high</td>
+                        </tr>
+                        <tr>
+                          <td>Responsive development</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>Fotografía</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>Support</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>CMS implementation</td>
+                          <td> </td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </figure>
+              <figure> 
+                <img src="./backgrounds2/campaign.png" alt=""  class="hero_img" id="fotog"/>
+                <div class="div1">
+                  <h2>FOTOGRAFIA</h2>
+                  <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
+                </div>
+                <div id="tbl-header">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Basic</th>
+                          <th>Medium</th>
+                          <th>Advance</th>
+                          <th>Next level</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div id="tbl-content">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td>PRECIOS</td>
+                          <td>200dls</td>
+                          <td>500dls</td>
+                          <td>900dls</td>
+                          <td>1500dls</td>
+                        </tr>
+                        <tr>
+                          <td>Design complexity</td>
+                          <td>low-basic</td>
+                          <td>basic-medium</td>
+                          <td>medium</td>
+                          <td>high</td>
+                        </tr>
+                        <tr>
+                          <td>Animation complexity</td>
+                          <td>low-basic</td>
+                          <td>basic-medium</td>
+                          <td>medium</td>
+                          <td>high</td>
+                        </tr>
+                        <tr>
+                          <td>Responsive development</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>Fotografía</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>Support</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>CMS implementation</td>
+                          <td> </td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </figure>
+             <figure> 
+                <img src="./backgrounds2/fotografia.png" alt=""  class="hero_img" id="fotop"/>
+                <div class="div1">
+                  <h2>FOTO PRODUCTO</h2>
+                  <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
+                </div>
+                <div id="tbl-header">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Basic</th>
+                          <th>Medium</th>
+                          <th>Advance</th>
+                          <th>Next level</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div id="tbl-content">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td>PRECIOS</td>
+                          <td>200dls</td>
+                          <td>500dls</td>
+                          <td>900dls</td>
+                          <td>1500dls</td>
+                        </tr>
+                        <tr>
+                          <td>Design complexity</td>
+                          <td>low-basic</td>
+                          <td>basic-medium</td>
+                          <td>medium</td>
+                          <td>high</td>
+                        </tr>
+                        <tr>
+                          <td>Animation complexity</td>
+                          <td>low-basic</td>
+                          <td>basic-medium</td>
+                          <td>medium</td>
+                          <td>high</td>
+                        </tr>
+                        <tr>
+                          <td>Responsive development</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>Fotografía</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>Support</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>CMS implementation</td>
+                          <td> </td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </figure>
+             <figure> 
+                <img src="./backgrounds2/produccion.png" alt=""  class="hero_img" id="branding"/>
+                <div class="div1">
+                  <h2>BRANDING</h2>                  
+                  <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
+                </div>
+                <div id="tbl-header">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <thead>
+                        <tr>
+                          <th> </th>
+                          <th>Basic</th>
+                          <th>Medium</th>
+                          <th>Advance</th>
+                          <th>Next level</th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                  <div id="tbl-content">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td>PRECIOS</td>
+                          <td>200dls</td>
+                          <td>500dls</td>
+                          <td>900dls</td>
+                          <td>1500dls</td>
+                        </tr>
+                        <tr>
+                          <td>Design complexity</td>
+                          <td>low-basic</td>
+                          <td>basic-medium</td>
+                          <td>medium</td>
+                          <td>high</td>
+                        </tr>
+                        <tr>
+                          <td>Animation complexity</td>
+                          <td>low-basic</td>
+                          <td>basic-medium</td>
+                          <td>medium</td>
+                          <td>high</td>
+                        </tr>
+                        <tr>
+                          <td>Responsive development</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>Fotografía</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>Support</td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                        <tr>
+                          <td>CMS implementation</td>
+                          <td> </td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </figure>
+            </div>
+          </div>
+          </div>
+    </section>
+    
 <!-- 
     <section id="section2">
         <div>
