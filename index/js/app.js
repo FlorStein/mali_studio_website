@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
 
-    $('body').on({'mousemove' : function ( e ) { 
+    $('.body').on({'mousemove' : function ( e ) { 
         console.log(e)
         let clientX = e.originalEvent.clientX
         let clientY = e.originalEvent.clientY
@@ -23,6 +23,8 @@ $(document).ready(function(){
           
         },       
       });
+
+      
 
       $('#since').on({
         'mouseover' : function () {
@@ -100,8 +102,22 @@ $(document).ready(function(){
         }
     })
 
+    $('.svg-row').on({
+        'mouseover' : function(){
+            $('#cursor').addClass('maxi')
+        },
+        'mouseout' : function (){
+            $('#cursor').removeClass('maxi')
+          
+        }
+    })
+
+});
 
 
-})
+
+
+
+
 
 console.clear()

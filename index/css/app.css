@@ -12,7 +12,31 @@
  
 }
 
+#cursor2{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #0e6a00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: none;
+    mix-blend-mode: difference;
+ 
+}
+
 #cursor.mini{
+    transform: scale(1.4);
+    border-style:solid;
+    background-color: #11ff00;
+    border-color: #000000;
+    border-width: 0.01px;
+    mix-blend-mode:difference;
+    /* transition:all .5s ease; */
+}
+
+#cursor2.mini{
     transform: scale(1.4);
     border-style:solid;
     background-color: #11ff00;
@@ -34,6 +58,8 @@
     
   
 }
+
+
 
 #cursor.eye{
     background: url(../backgrounds/eye.png) center no-repeat;
@@ -84,3 +110,16 @@
 
 
 /* cursor click */
+
+
+#cursor2.maxi2{
+    transform: scale(2.5);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    mix-blend-mode:lighten;
+    background-color:#8410b8;
+    /* transition: .2s linear; */
+    
+  
+}

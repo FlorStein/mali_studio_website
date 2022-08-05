@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="diseños por MALI STUDIOS, fotografía, diseño web, branding.">
     <title>MALI STUDIO</title>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,31 +13,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./css/text.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/stylesheet.css">
-    <link rel="stylesheet" href="./css/divider2.css">
-    <link rel="stylesheet" href="./css/gallery.css">
+    <link rel="stylesheet" href="./css/divider2.css">  
     <link rel="stylesheet" href="./css/pricing.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="./js/app.js"></script>
     <script defer src="./js/text.js"></script>   
-    <script defer src="./js/acc.js"></script>
     <script defer src="./js/pricing.js"></script>
+    <script defer src="./js/dividerApp.js"></script>
 
-    <script defer src="./js/gallery.js"></script>
+    
     
 
 
 </head>
-<body>
+<body class="body">
     <nav id="port" class="00 nav">
         <img src="./backgrounds/mali logo ok 2_negro.png" alt="logo mali" id="logo">
         <ul class="ul">
             <li class="nav-li">
                 <a href="#header" class="nav-li" onclick="navNot()">Home</a></li>
-            <li class="nav-li"><a href="#divisor" class="nav-li" onclick="navNot()">Nuestros servicios</a></li>
-            <li class="nav-li"><a href="#pricing2">Por qué nosotros</a></li>
-            <li class="nav-li"><a href="#portfolio" onclick="nav()" class="nav-li"> Porfolio </a></li>
+            <li class="nav-li"><a href="#divisor" class="nav-li" onclick="navNot()">Servicios</a></li>
+            <li class="nav-li"><a href="#pricing2">Nosotros</a></li>
+            <li class="nav-li"><a href="./gallery.html" onclick="nav()" class="nav-li" target="_self">Porfolio </a></li>
             <li class="nav-li"><a href="#pricing" onclick="navNot()"> Pricing </a></li>
             <li class="nav-li">Contacto</li>   
         </ul>
@@ -45,9 +43,9 @@
     <div id="header">
         <div id="hero">
             <div id="since">
-                <img src="./backgrounds/Line 8.svg" alt="" class="sinceLine">
+                <img src="./backgrounds/Line 8.svg" alt="line" class="sinceLine">
                 <p id="since-p">Since 2016</p>
-                <img src="./backgrounds/Line 8.svg" alt="" class="sinceLine">
+                <img src="./backgrounds/Line 8.svg" alt="line" class="sinceLine">
             </div>
             <div id="hero_img">
                
@@ -65,32 +63,39 @@
                 <div class="vector-divider divider2" id="divider">  
                     <div id="div-title2">
                         <div id="servicios-div">
-                            <div class="accordion-div">
+                            <div class="accordion-div" onclick="bgr00()">
                                 <div class="hidden-cartel" id="cartel0">FOTOGRAFIA</div>
                                 <div class="services" id="bgr0">
-                                    <div class="info" id="info0">
-                                        <p class="p-info">
+                                      <div class="info" id="info0">
+                                          <p class="p-info">
                                             Te ofrecemos un servicio fotográfico profesional adaptado a tu medida, necesidades y solvencia.
                                             Material fotográfico concreto y constante.
                                             Además realizamos cobertura de eventos. Trabajamos con vos para estar presentes en tus eventos y poder mostrar no solo tus productos, sino respetar y mostrar el clima, la esencia y tu estilo en imágenes por redes.
-                                        </p>
-                                    </div>
+                                          </p>
+                                          
+                                          <div class="div-dblClick">Doble Click
+                                            <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                          </div>  
+                                        
+                                      </div>
                                     <div class="card" id="card0">fotografia</div>  
                                 </div>
                             </div>
-                            <div class="accordion-div">
+                            <div class="accordion-div" onclick="bgr11()">
                                 <div class="hidden-cartel" id="cartel1">PRODUCCION</div>
                                 <div class="services" id="bgr1">
                                     <div class="info" id="info1">
                                         <p class="p-info">
                                             Realizamos producciones integrales abarcando todos los aspectos concernientes a ella, recursos, estilismo, locaciones, presentaciones y todo lo necesario.
-
                                         </p>
+                                        <div class="div-dblClick">Doble Click
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                        </div>
                                     </div>
                                     <div class="card" id="card1">Produccion</div>
                                 </div>
                             </div>
-                            <div class="accordion-div">
+                            <div class="accordion-div" onclick="bgr22()">
                                 <div class="hidden-cartel" id="cartel2">ASESORIA VIRTUAL</div>
                                 <div class="services" id="bgr2">
                                     <div class="info" id="info2">
@@ -98,11 +103,16 @@
                                             Te enseñamos virtualmente y guiamos para armar tus producciones y a hacer tus propias fotos, estilo, tips, consejos y documentación de apoyo.
                                             Te brindamos asesoramiento en todo el terreno de lo social, producciones fotográficas y mucho más de lo que necesites constantemente en tu negocio, en estilos, formas de presentación, promociones, looks, etc.
                                         </p>
-                                    </div>
+                                        
+                                        <div class="div-dblClick">Doble Click
+                                            <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                        </div>   
+                                        
+                                      </div>
                                     <div class="card" id="card2">asesoria</div>
                                 </div>
                             </div>
-                            <div class="accordion-div">
+                            <div class="accordion-div" onclick="bgr33()">
                                 <div class="hidden-cartel" id="cartel3">CAMPAIGN</div>
                                 <div class="services" id="bgr3">
                                     <div class="info" id="info3">
@@ -110,41 +120,60 @@
                                             Entendemos tu negocio y armamos tu imagen para que transmita tu esencia e identidad fotográficamente para tu web y medios sociales.
                                             Nos encargamos de  poner a disposición todos los medios y recursos necesarios para poder darte  los mejores resultados fotográficos de tus productos o servicios para tus catálogos.
                                         </p>
-                                    </div>
+                                        
+                                        <div class="div-dblClick">Doble Click
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                        </div>   
+                                        
+                                      </div>
                                     <div class="card" id="card3">campaign</div>
                                 </div>
                             </div>
-                            <div class="accordion-div">
+                            <div class="accordion-div" onclick="bgr44()">
                                 <div class="hidden-cartel" id="cartel4">SOCIAL MEDIA</div>
                                 <div class="services" id="bgr4">
                                     <div class="info" id="info4">
                                         <p class="p-info">
                                             Nos encargamos del diseño y el armado del marketing necesario para que llegues donde  necesites, mailings y promociones sociales.
                                         </p>
+                                        
+                                        <div class="div-dblClick">Doble Click
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                        </div>   
+                                        
                                     </div>
                                     <div class="card" id="card4">social media</div>
                                 </div>
                             </div>
-                            <div class="accordion-div">
+                            <div class="accordion-div" onclick="bgr55()">
                                 <div class="hidden-cartel" id="cartel5">BRAND CONTENT</div>
                                     <div class="services" id="bgr5">
                                     <div class="info" id="info5">
                                         <p class="p-info">
                                             Diseñamos tu imagen, tu estilo de presentación e identidad web para tu negocio y redes sociales, como así también los medios de contacto.
                                         </p>
-                                    </div>
+                                        
+                                        <div class="div-dblClick">Doble Click
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                        </div>  
+                                        
+                                      </div>
                                     <div class="card" id="card5">brand content</div>
                                     
                                 </div>
                             </div> 
-                            <div class="accordion-div">
+                            <div class="accordion-div" onclick="bgr66()">
                                 <div class="hidden-cartel" id="cartel6">DESIGN</div>
                                     <div class="services" id="bgr6">
                                     <div class="info" id="info6">
                                         <p class="p-info">
-                                            Diseñamos tu imagen, tu estilo de presentación e identidad web para tu negocio y redes sociales, como así también los medios de contacto.
-                                            
+                                            Diseñamos tu imagen, tu estilo de presentación e identidad web para tu negocio y redes sociales, como así también los medios de contacto. 
                                         </p>
+                                        <!-- <button id="row6"><img src="./images/bx-arrow-back.svg" alt="" class="svg-row"></button> -->
+                                        <div class="div-dblClick">Doble Click
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                        </div>
+                                         
                                     </div>
                                     <div class="card" id="card6">DESIGN</div>
                                     
@@ -153,86 +182,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
-    
-     <section id="portfolio">
-        <link rel='stylesheet' href='https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.css' />
-    <script src='https://unpkg.com/locomotive-scroll@4.0.6/dist/locomotive-scroll.min.js'></script>
-    
-    <div class='scroll-animations-example' data-scroll-container>
-        <div class='scrollsection' data-scroll-section>
-            <div class='item -normal' data-scroll data-scroll-speed="2">
-                <img class='image' src='./gallery photos/1.jpg'>
-            </div>
-            <div class='item -big' data-scroll data-scroll-speed="1">
-                <img class='image' src='./gallery photos/2.jpg'>
-            </div>
-            <div class='item -small -horizontal' data-scroll data-scroll-speed="4">
-                <img class='image' src='./gallery photos/3.jpg'>
-            </div>
-            <div class='item -normal' data-scroll data-scroll-speed="3">
-                <img class='image' src='./gallery photos/4.jpg'>
-            </div>
-            <div class='item -normal -horizontal' data-scroll data-scroll-speed="2">
-                <img class='image' src='./gallery photos/5.jpg'>
-            </div>
-            <div class='item -big -horizontal' data-scroll data-scroll-speed="4">
-                <img class='image' src='./gallery photos/6.jpg'>
-            </div>
-            <div class='item -small' data-scroll data-scroll-speed="2">
-                <img class='image' src='./gallery photos/7.jpg'>
-            </div>
-            <div class='item -normal -horizontal' data-scroll data-scroll-speed="1">
-                <img class='image' src='./gallery photos/8.jpg'>
-            </div>
-            <div class='item -small -horizontal' data-scroll data-scroll-speed="3">
-                <img class='image' src='./gallery photos/9.jpg'>
-            </div>
-            <div class='item -big' data-scroll data-scroll-speed="1">
-                <img class='image' src='./gallery photos/10.jpg'>
-            </div>
-            
-            <div class='item -normal -horizontal' data-scroll data-scroll-speed="2">
-                <img class='image' src='./gallery photos/11.jpg'>
-            </div>
-            <div class='item -normal -horizontal' data-scroll data-scroll-speed="1">
-                <img class='image' src='./gallery photos/12.jpg'>
-            </div>
-            <div class='item -small -horizontal' data-scroll data-scroll-speed="4">
-                <img class='image' src='./gallery photos/13.JPG'>
-            </div>
-            <div class='item -big' data-scroll data-scroll-speed="3">
-                <img class='image' src='./gallery photos/14.JPG'>
-            </div>
-            <div class='item -normal -horizontal' data-scroll data-scroll-speed="2">
-                <img class='image' src='./gallery photos/15.JPG'>
-            </div>
-            <div class='item -small -horizontal' data-scroll data-scroll-speed="4">
-                <img class='image' src='./gallery photos//16.jpg'>
-            </div>
-            <div class='item -big' data-scroll data-scroll-speed="2">
-                <img class='image' src='./gallery photos/17.jpg'>
-            </div>
-            <div class='item -normal -horizontal' data-scroll data-scroll-speed="1">
-                <img class='image' src='./gallery photos/18.jpg'>
-            </div>
-            <div class='item -small -horizontal' data-scroll data-scroll-speed="3">
-                <img class='image' src='./gallery photos/19.jpg'>
-            </div>
-            <div class='item -normal' data-scroll data-scroll-speed="1">
-                <img class='image' src='./gallery photos/20.jpg'>
-            </div>
-        </div>
-    </div>
-    </section>
-
     <section id="pricing">
         <div id="hero1">
             <div class="hero">
-              <figure class="on">
+              <figure class="figure on" id="figure1">
                
-                <img src="./backgrounds2/brand-content.png" class="hero_img" id="webdesign"/>
+                <img src="./images/backs/back1.svg" class="hero_img" id="webdesign" alt="background bauhaus"/>
                 <div class="div1">
                   <h2>WEB DESIGN</h2>
                   <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
@@ -240,7 +196,7 @@
                 <div id="tbl-header">
                     <table cellpadding="0" cellspacing="0" border="0">
                       <thead>
-                        <tr>
+                        <tr class="tr1">
                           <th> </th>
                           <th>Basic</th>
                           <th>Medium</th>
@@ -250,64 +206,64 @@
                       </thead>
                     </table>
                   </div>
-                  <div id="tbl-content">
+                  <div id="tbl-content" class="tbl-content">
                     <table cellpadding="0" cellspacing="0" border="0">
                       <tbody>
-                        <tr>
-                          <td>PRECIOS</td>
-                          <td>200dls</td>
-                          <td>500dls</td>
-                          <td>900dls</td>
-                          <td>1500dls</td>
+                        <tr class="tr1">
+                          <td class='tbl-c-title'>PRECIOS</td>
+                          <td>200u$s</td>
+                          <td>500u$s</td>
+                          <td>900u$s</td>
+                          <td>1500u$s</td>
                         </tr>
-                        <tr>
-                          <td>Design complexity</td>
+                        <tr class="tr1">
+                          <td class='tbl-c-title'>Design complexity</td>
                           <td>low-basic</td>
                           <td>basic-medium</td>
                           <td>medium</td>
                           <td>high</td>
                         </tr>
-                        <tr>
-                          <td>Animation complexity</td>
+                        <tr class="tr1">
+                          <td class='tbl-c-title'>Animation complexity</td>
                           <td>low-basic</td>
                           <td>basic-medium</td>
                           <td>medium</td>
                           <td>high</td>
                         </tr>
-                        <tr>
-                          <td>Responsive development</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <tr class="tr1">
+                          <td class='tbl-c-title'>Responsive development</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>Fotografía</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <tr class="tr1">
+                          <td class='tbl-c-title'>Fotografía</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>Support</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <tr class="tr1">
+                          <td class='tbl-c-title'>Support</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>CMS implementation</td>
+                        <tr class="tr1">
+                          <td class='tbl-c-title'>CMS implementation</td>
                           <td> </td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
               </figure>
-              <figure> 
-                <img src="./backgrounds2/campaign.png" alt=""  class="hero_img" id="fotog"/>
+              <figure id="figure2"> 
+                <img src="./images/backs/back2.svg" alt=""  class="hero_img" id="fotog"/>
                 <div class="div1">
                   <h2>FOTOGRAFIA</h2>
                   <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
@@ -315,7 +271,7 @@
                 <div id="tbl-header">
                     <table cellpadding="0" cellspacing="0" border="0">
                       <thead>
-                        <tr>
+                        <tr class="tr2">
                           <th> </th>
                           <th>Basic</th>
                           <th>Medium</th>
@@ -325,72 +281,72 @@
                       </thead>
                     </table>
                   </div>
-                  <div id="tbl-content">
+                  <div id="tbl-content" class="tbl-content">
                     <table cellpadding="0" cellspacing="0" border="0">
                       <tbody>
-                        <tr>
-                          <td>PRECIOS</td>
-                          <td>200dls</td>
-                          <td>500dls</td>
-                          <td>900dls</td>
-                          <td>1500dls</td>
+                        <tr class="tr2">
+                          <td class='tbl-c-title'>PRECIOS</td>
+                          <td>200u$s</td>
+                          <td>500u$s</td>
+                          <td>900u$s</td>
+                          <td>1500u$s</td>
                         </tr>
-                        <tr>
-                          <td>Design complexity</td>
+                        <tr class="tr2">
+                          <td class='tbl-c-title'>Design complexity</td>
                           <td>low-basic</td>
                           <td>basic-medium</td>
                           <td>medium</td>
                           <td>high</td>
                         </tr>
-                        <tr>
-                          <td>Animation complexity</td>
+                        <tr class="tr2">
+                          <td class='tbl-c-title'>Animation complexity</td>
                           <td>low-basic</td>
                           <td>basic-medium</td>
                           <td>medium</td>
                           <td>high</td>
                         </tr>
-                        <tr>
-                          <td>Responsive development</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <tr class="tr2">
+                          <td class='tbl-c-title'>Responsive development</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>Fotografía</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <tr class="tr2">
+                          <td class='tbl-c-title'>Fotografía</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>Support</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <!-- <tr class="tr2">
+                          <td class='tbl-c-title'>Support</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>CMS implementation</td>
+                        <tr class="tr2">
+                          <td class='tbl-c-title'>CMS implementation</td>
                           <td> </td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                        </tr>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                        </tr> -->
                       </tbody>
                     </table>
                   </div>
               </figure>
-             <figure> 
-                <img src="./backgrounds2/fotografia.png" alt=""  class="hero_img" id="fotop"/>
+              <figure id="figure3"> 
+                <img src="./images/backs/back3.svg" alt=""  class="hero_img" id="fotop"/>
                 <div class="div1">
                   <h2>FOTO PRODUCTO</h2>
                   <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
                 </div>
                 <div id="tbl-header">
-                    <table cellpadding="0" cellspacing="0" border="0">
+                    <table cellpadding="0" cellspacing="0" border="0"> 
                       <thead>
-                        <tr>
+                        <tr class="tr3">
                           <th> </th>
                           <th>Basic</th>
                           <th>Medium</th>
@@ -400,64 +356,64 @@
                       </thead>
                     </table>
                   </div>
-                  <div id="tbl-content">
+                  <div id="tbl-content" class="tbl-content">
                     <table cellpadding="0" cellspacing="0" border="0">
                       <tbody>
-                        <tr>
-                          <td>PRECIOS</td>
-                          <td>200dls</td>
-                          <td>500dls</td>
-                          <td>900dls</td>
-                          <td>1500dls</td>
+                        <tr class="tr3">
+                          <td class='tbl-c-title'>PRECIOS</td>
+                          <td>200u$s</td>
+                          <td>500u$s</td>
+                          <td>900u$s</td>
+                          <td>1500u$s</td>
                         </tr>
-                        <tr>
-                          <td>Design complexity</td>
+                        <tr class="tr3">
+                          <td class='tbl-c-title'>Design complexity</td>
                           <td>low-basic</td>
                           <td>basic-medium</td>
                           <td>medium</td>
                           <td>high</td>
                         </tr>
-                        <tr>
-                          <td>Animation complexity</td>
+                        <tr class="tr3">
+                          <td class='tbl-c-title'>Animation complexity</td>
                           <td>low-basic</td>
                           <td>basic-medium</td>
                           <td>medium</td>
                           <td>high</td>
                         </tr>
-                        <tr>
-                          <td>Responsive development</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <tr class="tr3">
+                          <td class='tbl-c-title'>Responsive development</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>Fotografía</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <!-- <tr class="tr3">
+                          <td class='tbl-c-title'>Fotografía</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
+                        <tr class="tr3">
                           <td>Support</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>CMS implementation</td>
+                        <tr class="tr3">
+                          <td class='tbl-c-title'>CMS implementation</td>
                           <td> </td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                        </tr>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                        </tr> -->
                       </tbody>
                     </table>
                   </div>
               </figure>
-             <figure> 
-                <img src="./backgrounds2/produccion.png" alt=""  class="hero_img" id="branding"/>
+              <figure id="figure4" class="figure"> 
+                <img src="./images/backs/back4.svg" alt=""  class="hero_img" id="branding"/>
                 <div class="div1">
                   <h2>BRANDING</h2>                  
                   <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
@@ -465,7 +421,7 @@
                 <div id="tbl-header">
                     <table cellpadding="0" cellspacing="0" border="0">
                       <thead>
-                        <tr>
+                        <tr class="tr4">
                           <th> </th>
                           <th>Basic</th>
                           <th>Medium</th>
@@ -475,58 +431,58 @@
                       </thead>
                     </table>
                   </div>
-                  <div id="tbl-content">
+                  <div id="tbl-content" class="tbl-content">
                     <table cellpadding="0" cellspacing="0" border="0">
                       <tbody>
-                        <tr>
-                          <td>PRECIOS</td>
-                          <td>200dls</td>
-                          <td>500dls</td>
-                          <td>900dls</td>
-                          <td>1500dls</td>
+                        <tr class="tr4">
+                          <td class='tbl-c-title'>PRECIOS</td>
+                          <td>200u$s</td>
+                          <td>500u$s</td>
+                          <td>900u$s</td>
+                          <td>1500u$s</td>
                         </tr>
-                        <tr>
-                          <td>Design complexity</td>
+                        <tr class="tr4">
+                          <td class='tbl-c-title'>Design complexity</td>
                           <td>low-basic</td>
                           <td>basic-medium</td>
                           <td>medium</td>
                           <td>high</td>
                         </tr>
-                        <tr>
-                          <td>Animation complexity</td>
+                        <tr class="tr4">
+                          <td class='tbl-c-title'>Animation complexity</td>
                           <td>low-basic</td>
                           <td>basic-medium</td>
                           <td>medium</td>
                           <td>high</td>
                         </tr>
-                        <tr>
-                          <td>Responsive development</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <tr class="tr4">
+                          <td class='tbl-c-title'>Responsive development</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>Fotografía</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <tr class="tr4">
+                          <td class='tbl-c-title'>Fotografía</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>Support</td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
+                        <!-- <tr class="tr4">
+                          <td class='tbl-c-title'>Support</td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
                         </tr>
-                        <tr>
-                          <td>CMS implementation</td>
+                        <tr class="tr4">
+                          <td class='tbl-c-title'>CMS implementation</td>
                           <td> </td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                          <td><img src="./bx-check.svg" alt="" class="check img"></td>
-                        </tr>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                          <td><img src="./images/bx-check.svg" alt="check" class="check img"></td>
+                        </tr> -->
                       </tbody>
                     </table>
                   </div>

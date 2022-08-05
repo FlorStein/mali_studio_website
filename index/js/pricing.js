@@ -11,7 +11,7 @@ $(document).ready(function() {
         .eq($item)
         .addClass("on");
     }
-    var $autoTransition = setInterval(transitionSlide, 5500);
+    var $autoTransition = setInterval(transitionSlide, 3500);
   
     $(".hero figure").click(function() {
       clearInterval($autoTransition);
@@ -23,4 +23,6 @@ $(document).ready(function() {
     //   $autoTransition = setInterval(transitionSlide, 3500);
     });
   });
+
+
   

@@ -62,6 +62,10 @@
     display: flex;
     flex-direction: row;
 }
+.accordion-div.active{
+    display: flex;
+    flex-direction: row;
+}
 .card{
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -121,37 +125,37 @@
 .bgr0{
     background:var(--BACKGROUND-0) fixed;
     transition: var(--TRANSITION-1);  
-    /* mix-blend-mode: luminosity; */
+    
 }
 .bgr1{
     background:var(--BACKGROUND-1) fixed;
     transition: var(--TRANSITION-1);
-    /* mix-blend-mode: luminosity; */
+    
 }
 .bgr2{
     background:var(--BACKGROUND-2)  fixed;
     transition: var(--TRANSITION-1);
-    /* mix-blend-mode: luminosity; */
+    
 }
 .bgr3{
     background: var(--BACKGROUND-3) fixed;
     transition: var(--TRANSITION-1);
-    /* mix-blend-mode: luminosity; */
+    
 }
 .bgr4{
     background: var(--BACKGROUND-4)fixed;
     transition: var(--TRANSITION-1);
-    /* mix-blend-mode: luminosity; */
+    
 }
 .bgr5{
     background:var(--BACKGROUND-5)fixed;
     transition: var(--TRANSITION-1);
-    /* mix-blend-mode: luminosity; */
+    
 }
 .bgr6{
     background:var(--BACKGROUND-6)fixed;
     transition: var(--TRANSITION-1);
-    /* mix-blend-mode: luminosity; */
+    
 }
 #bgr0{
     width: var(--BGR-MIN-WIDTH);
@@ -258,7 +262,7 @@
     color: var(--COLOR-BLACK);  
     border-color:var(--COLOR-BLACK);  
 }
-.services.active{
+.active{
     width: 80vw !important;
     height: 600px !important;
     margin: 0 !important;
@@ -275,14 +279,15 @@
     border-radius: var(--BORDER-RADIUS);
     
 }
+
 .info{
     display: none;
 }
 .p-info{
     color: var(--COLOR-BLACK);
     height: fit-content;
-    margin-left: 20rem;
-    margin-top: 10rem;
+    margin-left: 10rem;
+    margin-top: 6rem;
     font-size: 1.3rem;
     line-height: 2.5rem;
     /* backdrop-filter: blur(50px); */
@@ -300,9 +305,47 @@
     color: var(--COLOR-BLACK);
     font-family: monospace;
     height: fit-content;
-    
-    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
 }
 
+
+.svg-row{
+    /* padding-left: 50px; */
+    /* padding-top: 50px; */
+    transform: scale(4);
+    fill: #7d8b73;
+    mix-blend-mode: difference;
+}
+.svg-row.active{
+    /* padding-left: 50px; */
+    transform: scale(4);
+    fill: #4b355c;
+    /* mix-blend-mode: difference; */
+}
+
+
+#cursor.maxi2{
+    transform: scale(2.5);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    /* mix-blend-mode:lighten; */
+    /* background-color:#8410b8; */
+    /* transition: .2s linear; */
+    
+  
+}
+
+.div-dblClick{
+    display: flex;
+flex-direction: column-reverse;
+align-items: center;
+height: 80px;
+justify-content: space-between;
+}
 
 
