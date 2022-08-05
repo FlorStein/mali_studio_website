@@ -1,0 +1,48 @@
+@media screen and (max-width: 1024px){
+    .vector-divider.divider2, .p-info{
+        transform: scale(.85);
+        width:700px;
+        
+    }
+    .cartel{
+        transform: scale(.6);
+        padding-top: 4.3rem;
+        margin-left: -5rem;
+    }
+
+    .active{
+        background: center no-repeat;
+        /* width: 700px; */
+    }
+
+    .nav{
+        transform: scale(0.8);
+        min-width: fit-content;
+    }
+    .ul{
+        padding-left: 0;
+    }
+
+    #title2{
+        transform: scale(.4);
+        margin-top: 3rem;
+        min-width: max-content;
+    }
+
+     #hero{
+        transform: scale(0.6);
+    }
+    #header{
+        margin-left: -16rem;
+    }
+
+    #p{
+        padding-left: 3rem;
+        /* transform: scale(0.5); */
+    }
+
+    .hero{
+        min-width: 100vw;
+        margin-left: -4rem !important;
+    }
+}
