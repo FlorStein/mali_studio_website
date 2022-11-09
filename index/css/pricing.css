@@ -139,7 +139,11 @@
     object-fit: cover;
     position: absolute;
   }
-  .hero figure div {
+
+  .hero_img_mediaQ{
+    display: none;
+  }
+  .hero figure div  {
     -webkit-animation: infoOut;
     animation: infoOut;
   }
@@ -211,8 +215,11 @@
     font-size: 1rem;
   }
 
-
-  figure.on #tbl-content{
+  .tbl-content{
+    display: none;
+  }
+  figure.on .tbl-content{
+    display: flex;
     overflow-x:auto;
     margin-top: 0px;
     position: sticky;
@@ -221,13 +228,13 @@
     transition: 0.3s ease;
   }
 
-  figure.on #tbl-header{
+  figure.on .tbl-header{
     overflow-x:auto;
-    margin-top: 0px;
+    margin-top: 2rem;
     position: sticky;
     -webkit-animation: infoIn 1.2s;
     animation: infoIn 1.2s;
-    transition: 0.3s ease;
+    transition: 0.3s;
 
   }
   figure.on th{

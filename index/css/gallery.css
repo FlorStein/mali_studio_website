@@ -179,3 +179,26 @@
 
 }
 
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 780px)
+ {
+
+  #title2{
+    width: 80vw;
+    font-size: 3rem;
+    position: fixed;
+  }
+  .scroll-animations-example > .scrollsection {
+    padding: 20vh 10vh 10vh 10vmax;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw !important;
+
+}
+
+
+#portfolio{
+  padding-left: 0;
+
+}}
