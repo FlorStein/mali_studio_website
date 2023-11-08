@@ -248,7 +248,14 @@ body{
 
 
 
-#section2{}
+/* #section2{
+  height: 100vh;
+}
+
+#div-title{
+  margin:auto;
+  margin-top: 10rem;
+} */
 
 #section3{}
 
