@@ -261,9 +261,26 @@ body{
 
 #section4{}
 
-#section5{}
+#section5{
+  height: 300px;
+}
 
-footer{}
+footer, .h11, .h22{  
+  color: white;
+  font-family: Arial;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  background-color: #5a4972;
+}
+
+.h11, .h22 {
+ 
+  height: 300%;
+}
 
 
 .perspective-text {
