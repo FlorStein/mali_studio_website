@@ -242,7 +242,8 @@ and (max-device-width : 480px) {
     }
 
     td{
-        width: fit-content;
+        width:min-content;
+        height: fit-content;
         text-align: end;
     }
 
