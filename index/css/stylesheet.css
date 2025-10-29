@@ -10,3 +10,4 @@
     font-style: normal;
     font-display: swap;
 }
+@media (max-width: 768px){ .logo, .logo-mali, .mali-logo, .logo-rotating, .rotate-logo { animation: none !important; transform: none !important; } }

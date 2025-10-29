@@ -266,3 +266,5 @@
     height: 40px;
     width: 40px;
   }
+
+@media (max-width: 768px){ .logo, .logo-mali, .mali-logo, .logo-rotating, .rotate-logo { animation: none !important; transform: none !important; } }

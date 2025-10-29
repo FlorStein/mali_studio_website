@@ -46,7 +46,6 @@ html{
 
 
 
-
 ::-webkit-scrollbar{
     display: none;
 }
@@ -99,7 +98,7 @@ body{
 }
 
 #logo{
-  width: 8rem;
+  width: 12rem;
   height: auto;
 }
 
@@ -173,11 +172,6 @@ body{
     min-height: auto;
 }
 
-
-#hero_img{
-    padding: 2rem 1rem 2rem 0rem; 
-    /* transform: scale(.8);   */
-}
 
 
 #hero__p{
@@ -344,3 +338,4 @@ footer{
   left: 19px;
   mix-blend-mode: overlay;
 }
+

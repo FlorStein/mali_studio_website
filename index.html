@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="diseños por MALI STUDIOS, fotografía, diseño web, branding.">
     <title>MALI STUDIO</title>
     <link rel="stylesheet" href="./index/css/index.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
@@ -17,7 +18,10 @@
     <link rel="stylesheet" href="./index/css/pricing.css">
     <link rel="stylesheet" href="./index/css/mediaQ.css">
     <link rel="stylesheet" href="./index/css/moreInfo.css">
+    <link rel="stylesheet" href="./index/css/hamburger.css">
+    <link rel="stylesheet" href="./index/css/footer-responsive.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="./index/js/hamburger.js"></script>
     <script defer src="./index/js/app.js"></script>
     <script defer src="./index/js/text.js"></script>   
     <script defer src="./index/js/pricing.js"></script>
@@ -27,18 +31,30 @@
     
 
 
+  <link rel="stylesheet" href="./patches.css">
+
+<link rel="stylesheet" href="./responsive_patch.css">
 </head>
+
 <body class="body">
     <nav id="port" class="00 nav">
-        <img src="./index/backgrounds/mali logo ok 2_negro.png" alt="logo mali" id="logo">
-        <ul class="ul">
+        <img src="./index/images/studio nola nav.svg" alt="logo mali" id="logo">
+        
+        <!-- Botón hamburguesa -->
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <ul class="ul" id="navMenu">
             <li class="nav-li">
-                <a href="#header" class="nav-li">Home</a></li>
-            <li class="nav-li"><a href="#divisor" class="nav-li">Servicios</a></li>
+                <a href="#header" class="nav-link">Home</a></li>
+            <li class="nav-li"><a href="#divisor" class="nav-link">Servicios</a></li>
             <!-- <li class="nav-li"><a href="#pricing2">Nosotros</a></li> -->
-            <li class="nav-li"><a href="./index/gallery.html" onclick="nav()" class="nav-li" target="_self">Gallery </a></li>
-            <li class="nav-li"><a href="#pricing">Más info</a></li>
-            <li class="nav-li">Contacto</li>   
+            <li class="nav-li"><a href="./index/gallery.html" onclick="nav()" class="nav-link" target="_self">Gallery </a></li>
+            <li class="nav-li"><a href="#pricing" class="nav-link">Más info</a></li>
+            <li class="nav-li"><span class="is-disabled" aria-disabled="true">Contacto</span></li>   
         </ul>
     </nav>
     <div id="cursor"></div>
@@ -49,11 +65,7 @@
                 <p id="since-p">Since 2016</p>
                 <img src="./index/backgrounds/Line 8.svg" alt="line" class="sinceLine">
             </div>
-            <div id="hero_img">
-                <img src="./index/images/mali img.png" alt="MALI LOGO 2" id="hero_img_2">
-               
-                <p class="p" id="hero__p">ORIGINAL IN DIGITAL</p>
-            </div>
+          <p class="p" id="hero__p">ORIGINAL IN DIGITAL</p>
         </div>
         <div>
             <h1 id="h1"></h1>
@@ -77,7 +89,7 @@
                                           </p>
                                           
                                           <!-- <div class="div-dblClick">Doble Click
-                                            <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                            <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
                                           </div>   -->
                                         
                                       </div>
@@ -92,7 +104,7 @@
                                             Realizamos producciones integrales abarcando todos los aspectos concernientes a ella, recursos, estilismo, locaciones, presentaciones y todo lo necesario.
                                         </p>
                                         <!-- <div class="div-dblClick">Doble Click
-                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
                                         </div> -->
                                     </div>
                                     <div class="card" id="card1">Produccion</div>
@@ -108,7 +120,7 @@
                                         </p>
                                         
                                         <!-- <div class="div-dblClick">Doble Click
-                                            <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                            <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
                                         </div>    -->
                                         
                                       </div>
@@ -125,7 +137,7 @@
                                         </p>
                                         
                                         <!-- <div class="div-dblClick">Doble Click
-                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
                                         </div>    -->
                                         
                                       </div>
@@ -141,7 +153,7 @@
                                         </p>
                                         
                                         <!-- <div class="div-dblClick">Doble Click
-                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
                                         </div>    -->
                                         
                                     </div>
@@ -157,7 +169,7 @@
                                         </p>
                                         
                                         <!-- <div class="div-dblClick">Doble Click
-                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
                                         </div>   -->
                                         
                                       </div>
@@ -174,7 +186,7 @@
                                         </p>
                                         <!-- <button id="row6"><img src="./index/images/bx-arrow-back.svg" alt="" class="svg-row"></button>
                                         <div class="div-dblClick">Doble Click
-                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
+                                          <svg class="svg-row" xmlns="http://www.w3.org/2000/svg" class='svg'><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"/></svg>  
                                         </div> -->
                                          
                                     </div>
@@ -195,7 +207,7 @@
                 
                 <div class="div1">
                   <h2>WEB DESIGN</h2>
-                  <p class="p_moreinfo"><a href="#webdesignInfo">MÁS INFORMACIÓN</a></p>
+                  <!-- <p class="p_moreinfo"><a href="#webdesignInfo">MÁS INFORMACIÓN</a></p> -->
                 </div>
                 <div class="tbl-header">
                     <table cellpadding="0" cellspacing="0" border="0">
@@ -269,7 +281,7 @@
                 <img src="./index/images/backs/back2.svg" alt=""  class="hero_img" id="fotog"/>
                 <div class="div1">
                   <h2>FOTOGRAFIA</h2>
-                  <p class="p_moreinfo"><a href="#fotogInfo">MÁS INFORMACIÓN</a></p>
+                  <!-- <p class="p_moreinfo"><a href="#fotogInfo">MÁS INFORMACIÓN</a></p> -->
                 </div>
                 <div class="tbl-header">
                     <table cellpadding="0" cellspacing="0" border="0">
@@ -348,7 +360,7 @@
                 <img src="./index/images/backs/back3.svg" alt=""  class="hero_img" id="fotop"/>
                 <div class="div1">
                   <h2>FOTO PRODUCTO</h2>
-                  <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
+                  <!-- <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p> -->
                 </div>
                 <div class="tbl-header">
                     <table cellpadding="0" cellspacing="0" border="0"> 
@@ -431,7 +443,7 @@
                 <img src="./index/images/backs/back4.svg" alt=""  class="hero_img" id="branding"/>
                 <div class="div1">
                   <h2>BRANDING</h2>                  
-                  <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p>
+                  <!-- <p class="p_moreinfo"><a href="#">MÁS INFORMACIÓN</a></p> -->
                 </div>
                 <div class="tbl-header">
                     <table cellpadding="0" cellspacing="0" border="0">
@@ -504,18 +516,63 @@
     <section id="section4">
         <div>
             <h1>Quiénes somos</h1>
-        </div>
-    </section> -->
-    <!-- <section id="section5">
-        <div>
-            <h1 class="h11">Contacto</h1>
-            <h2 class="h11">https://wa.me/541163301998</h2>
-        </div>
-    </section> -->
-    <!-- <footer class="portfolio-experiment">
-            <div class="experiment-title" contenteditable="true">MALI 2024</div>
-    </footer>   -->
+       </div> -->
+      <!--
+-->
+    <!--    -->
 
+
+  <!-- CONTACTO (final y unificado) -->
+<!--
+-->
+
+  <script src="./patches.js"></script>
+
+    <!-- === Site Footer === -->
+    
+    
+
+  <footer id="site-footer" class="footer" role="contentinfo" aria-label="Pie de página">
+    <div class="footer-wrap">
+      <div class="footer-brand">
+        <img src="./assets/logos/studio-nola-nav.svg" alt="Studio Nola" class="footer-logo" />
+        <p class="footer-tagline">Dirección creativa, branding y contenido.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Enlaces">
+        <h3 class="footer-title">Navegación</h3>
+        <ul>
+          <li><a href="#port">Inicio</a></li>
+          <li><a href="#section3">Servicios</a></li>
+          <li><a href="#webdesign">Web design</a></li>
+          <li><a href="#branding">Branding</a></li>
+          <li><a href="#pricing">Precios</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h3 class="footer-title">Contacto</h3>
+        <ul>
+          <li><a href="mailto:studionolaatelier@gmail.com">studionolaatelier@gmail.com</a></li>
+          <li><a href="https://wa.me/541163301998" rel="nofollow noopener" target="_blank">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="year-copy"></span> Studio Nola — Todos los derechos reservados.</p>
+    </div>
+    <script>
+      // año dinámico
+      document.addEventListener('DOMContentLoaded', () => {
+        var y = document.getElementById('year-copy');
+        if (y) y.textContent = new Date().getFullYear();
+      });
+    </script>
+  </footer>
+
+
+<script src="./responsive_nav.js"></script>
 </body>
 <!-- <a href="https://www.flaticon.es/iconos-gratis/ojo" title="ojo iconos">Ojo iconos creados por ibrandify - Flaticon</a> -->
 <!-- <a href="https://iconscout.com/3ds/diary" target="_blank">Diary 3D Illustration</a> by <a href="https://iconscout.com/contributors/iconscout">Iconscout Store</a> on <a href="https://iconscout.com">IconScout</a> -->

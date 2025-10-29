@@ -202,3 +202,4 @@ and (max-device-width : 780px)
   padding-left: 0;
 
 }}
+@media (max-width: 768px){ .logo, .logo-mali, .mali-logo, .logo-rotating, .rotate-logo { animation: none !important; transform: none !important; } }
