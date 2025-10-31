@@ -10,6 +10,7 @@ html{
     scroll-behavior: smooth;
     cursor: none;
     background: url(../backgrounds/backgroundoriginal.svg) center fixed no-repeat;
+    overflow-x: hidden;
 }
 :root{
 
@@ -69,7 +70,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     background: var(--BACKGROUND--1);
 }
 
