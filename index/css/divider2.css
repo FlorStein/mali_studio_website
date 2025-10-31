@@ -80,7 +80,7 @@
     justify-content: center;
     width: var(--BGR-MIN-WIDTH);
     height: var(--BGR-MIN-HEIGHT);
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     color: var(--COLOR-WHITE);
     /* color: var(--COLOR-WHITE); */
 }
@@ -92,7 +92,7 @@
     font-weight: 400;
     font-size: 1.2rem;
     overflow: hidden;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     color: var(--COLOR-WHITE);
 }
 .hidden-cartel{
@@ -110,7 +110,7 @@
     transition: all 0.5s ease-in;
     line-height: 6rem;
     color: var(--COLOR-BLACK);
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     /* text-shadow: 5px 5px 0px #eb452b, 
     10px 10px 0px #efa032, 
     15px 15px 0px #46b59b, 
@@ -123,16 +123,8 @@
     /* transform: skewY(15deg) translateY(120px);*/
 }
 #cartel0, #cartel1, #cartel2, #cartel3, #cartel4, #cartel5, #cartel6 {
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     color: var(--COLOR-WHITE);
-}
-/* Color específico para Asesoría Virtual para mejor contraste */
-#cartel2 {
-    color: #ff8282;
-}
-/* Color específico para Social Media */
-#cartel4 {
-    color: #5684f6;
 }
 .bgr-1{
     /* background:var(--BACKGROUND--1) fixed; */
@@ -315,20 +307,6 @@
     /* border-color: var(--COLOR-WHITE); */
     transition: var(--TRANSITION-1);
 }
-/* Background específico para el párrafo de Asesoría Virtual */
-#info2 .p-info {
-    background-color: #ff8282;
-    color: #f2ff00;
-}
-/* Color de texto específico para Brand Content */
-#info5 .p-info {
-    color: #ff6262;
-    background-color: #ffffff;
-}
-/* Background específico para Social Media */
-#info4 .p-info {
-    background-color: #5684f6;
-}
 .display{
     display: inline-block;
     padding: 3rem 10rem 3rem 0rem;
@@ -340,7 +318,86 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-end;
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
+}
+
+/* Colores personalizados para cada servicio cuando está abierto */
+
+/* Servicio 0 */
+#cartel0 {
+    color: #54bf7d !important;
+}
+#pinfo0 {
+    background-color: #54bf7d !important;
+}
+#info0 .p-info {
+    color: #961D82;
+}
+
+/* Servicio 1 */
+#cartel1 {
+    color: #CDEA79 !important;
+}
+#pinfo1 {
+    background-color: #CDEA79 !important;
+}
+#info1 .p-info {
+    color: #321586;
+}
+
+/* Servicio 2 */
+#cartel2 {
+    color: #A7197D !important;
+}
+#pinfo2 {
+    background-color: #A7197D !important;
+}
+#info2 .p-info {
+    color: #a0aaff;
+}
+
+/* Servicio 3 */
+#cartel3 {
+    color: #159FFF !important;
+}
+#pinfo3 {
+    background-color: #159FFF !important;
+}
+#info3 .p-info {
+    color: #ff0000;
+}
+
+/* Servicio 4 */
+#cartel4 {
+    color: #A962F6 !important;
+}
+#pinfo4 {
+    background-color: #A962F6 !important;
+}
+#info4 .p-info {
+    color: #FFE600;
+}
+
+/* Servicio 5 */
+#cartel5 {
+    color: #FF857D !important;
+}
+#pinfo5 {
+    background-color: #FF857D !important;
+}
+#info5 .p-info {
+    color: #FF262C;
+}
+
+/* Servicio 6 */
+#cartel6{
+    color: #070741 !important;
+}
+#pinfo6 {
+    background-color: #070741 !important;
+}
+#info6 .p-info {
+    color: #E3D5BE;
 }
 
 

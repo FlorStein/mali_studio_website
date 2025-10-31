@@ -38,16 +38,14 @@ $(document).ready(function(){
      
     })
 
-    $('#hero_img').on({
+    $('#hero__p').on({
         'mouseover' : function () {
              $('#cursor').addClass('eye')
            },
         'mouseout' : function (){
             $('#cursor').removeClass('eye')
-          
+
         }
-     
-     
     })
 
     $('#card-div').on({
