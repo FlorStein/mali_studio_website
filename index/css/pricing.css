@@ -584,6 +584,28 @@
     opacity: 0.6;
     pointer-events: none;
   }
+  
+  /* Ocultar imágenes de fondo en mobile */
+  .hero_img {
+    display: none !important;
+  }
+  
+  /* Backgrounds de colores lila para mobile */
+  #figure1 {
+    background-color: #AC8EDD;
+  }
+  
+  #figure2 {
+    background-color: #967CBF;
+  }
+  
+  #figure3 {
+    background-color: #836CA8;
+  }
+  
+  #figure4 {
+    background-color: #79639C;
+  }
 }
 
 /* Móviles (320px - 480px) */
@@ -775,6 +797,28 @@
     font-size: 1rem;
     opacity: 0.6;
     pointer-events: none;
+  }
+  
+  /* Ocultar imágenes de fondo en mobile */
+  .hero_img {
+    display: none !important;
+  }
+  
+  /* Backgrounds de colores lila para mobile */
+  #figure1 {
+    background-color: #AC8EDD;
+  }
+  
+  #figure2 {
+    background-color: #967CBF;
+  }
+  
+  #figure3 {
+    background-color: #836CA8;
+  }
+  
+  #figure4 {
+    background-color: #79639C;
   }
 }
 
