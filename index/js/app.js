@@ -110,6 +110,27 @@ $(document).ready(function(){
         }
     })
 
+    // Detectar cuando el nav está sobre la sección de servicios para aplicar glassmorphism
+    const nav = document.querySelector('.nav');
+    const divisorSection = document.querySelector('#divisor');
+    
+    if (nav && divisorSection) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    nav.classList.add('nav-on-servicios');
+                } else {
+                    nav.classList.remove('nav-on-servicios');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '-80px 0px 0px 0px' // Ajusta según la altura del nav
+        });
+        
+        observer.observe(divisorSection);
+    }
+
 });
 
 

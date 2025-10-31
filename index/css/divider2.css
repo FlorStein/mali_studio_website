@@ -340,6 +340,10 @@
 }
 #pinfo1 {
     background-color: #CDEA79 !important;
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(205, 234, 121, 0.7) !important;
+    border: 1px solid rgba(205, 234, 121, 0.3); */
 }
 #info1 .p-info {
     color: #321586;
