@@ -80,6 +80,8 @@
     justify-content: center;
     width: var(--BGR-MIN-WIDTH);
     height: var(--BGR-MIN-HEIGHT);
+    mix-blend-mode: difference;
+    color: var(--COLOR-WHITE);
     /* color: var(--COLOR-WHITE); */
 }
 .card.display{
@@ -90,6 +92,8 @@
     font-weight: 400;
     font-size: 1.2rem;
     overflow: hidden;
+    mix-blend-mode: difference;
+    color: var(--COLOR-WHITE);
 }
 .hidden-cartel{
     display: none;
@@ -106,6 +110,7 @@
     transition: all 0.5s ease-in;
     line-height: 6rem;
     color: var(--COLOR-BLACK);
+    mix-blend-mode: difference;
     /* text-shadow: 5px 5px 0px #eb452b, 
     10px 10px 0px #efa032, 
     15px 15px 0px #46b59b, 
@@ -116,6 +121,18 @@
     40px 40px 0px #c11a2b, 
     45px 45px 0px #c11a2b;  */
     /* transform: skewY(15deg) translateY(120px);*/
+}
+#cartel0, #cartel1, #cartel2, #cartel3, #cartel4, #cartel5, #cartel6 {
+    mix-blend-mode: difference;
+    color: var(--COLOR-WHITE);
+}
+/* Color específico para Asesoría Virtual para mejor contraste */
+#cartel2 {
+    color: #ff8282;
+}
+/* Color específico para Social Media */
+#cartel4 {
+    color: #5684f6;
 }
 .bgr-1{
     /* background:var(--BACKGROUND--1) fixed; */
@@ -298,6 +315,20 @@
     /* border-color: var(--COLOR-WHITE); */
     transition: var(--TRANSITION-1);
 }
+/* Background específico para el párrafo de Asesoría Virtual */
+#info2 .p-info {
+    background-color: #ff8282;
+    color: #f2ff00;
+}
+/* Color de texto específico para Brand Content */
+#info5 .p-info {
+    color: #ff6262;
+    background-color: #ffffff;
+}
+/* Background específico para Social Media */
+#info4 .p-info {
+    background-color: #5684f6;
+}
 .display{
     display: inline-block;
     padding: 3rem 10rem 3rem 0rem;
@@ -309,7 +340,7 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-end;
-
+    mix-blend-mode: difference;
 }
 
 

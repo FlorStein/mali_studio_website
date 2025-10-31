@@ -20,13 +20,13 @@ html{
     /* --COLOR-GRAY: #ff0000; */
 
     --BACKGROUND--1:url(../backgrounds/backgroundoriginal.svg);
-    --BACKGROUND-0:url(../backgrounds2/brg2\ \(2\).png);
-    --BACKGROUND-1:url(../backgrounds2/produccion.png);
-    --BACKGROUND-2:url(../backgrounds2/asesoria-virtual.png);
-    --BACKGROUND-3:url(../backgrounds2/campaign.png);
-    --BACKGROUND-4:url(../backgrounds2/social-media.png);
-    --BACKGROUND-5:url(../backgrounds2/brand-content.png);
-    --BACKGROUND-6:url(../backgrounds2/design.png);
+    --BACKGROUND-0:url(../images/backgrounds\ color/backgroundpink.svg);
+    --BACKGROUND-1:url(../images/backgrounds\ color/backgroundblue.svg);
+    --BACKGROUND-2:url(../images/backgrounds\ color/backgroundlightblue.svg);
+    --BACKGROUND-3:url(../images/backgrounds\ color/backgroundred.svg);
+    --BACKGROUND-4:url(../images/backgrounds\ color/backgroundyellow.svg);
+    --BACKGROUND-5:url(../images/backgrounds\ color/backgroundgreen.svg);
+    --BACKGROUND-6:url(../images/backgrounds\ color/backgroundbeige.svg);
 
     --TRANSITION-1: all 1s ease;
     
